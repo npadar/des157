@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:300|Khula:300|Yantramanav:300');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yantramanav", "Helvetica";
+    /*background-color: #a4a6a8;*/
+    background-color: whitesmoke;
+    width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.name {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: "Avenir";
+    color: #819fdb;
+}
+
+header {
+    width: 800px;
+    height: 250px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    /*background-color: #f4b642;
+    background-color: #d8d7d4;*/
+}
+
+h2 {
+    text-align: left;
+    font-size: .9em;
+    text-transform: uppercase;
+    /*color: white;*/
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    /*color: white;*/
+    color: black;
+    /*color: #605b50;*/
+    font-size: .9em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    text-align: left;
+}
+
+div {
+    float: left;
+    margin: 30px;
+    padding: 15px;
+}
+
+footer {
+    clear: left;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: #605b50;
+}
+
+footer a {
+    font-size: .8em;
+    text-transform: uppercase;
+}
