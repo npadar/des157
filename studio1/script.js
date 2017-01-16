@@ -30,6 +30,16 @@ function draw() {
         g2++;
         b2--;
     }
+
+    if ((r2 == 255) || (r1 == 255)) {
+        r1 = 153;
+        r2 = 102;
+        g1 = 250;
+        g2 = 150;
+        b1 = 255;
+        b2 = 255;
+
+    }
     ellipse(mouseX, mouseY, 50, 50);
 
     /*color c = color(82, 111, 132); //yellow
