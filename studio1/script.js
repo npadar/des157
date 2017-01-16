@@ -8,19 +8,32 @@ function setup() {
     background(255);
 }
 
+var r1 = 153;
+var r2 = 102;
+var g1 = 250;
+var g2 = 150;
+var b1 = 255;
+var b2 = 255;
+
 function draw() {
     // statements here
+
     noStroke();
     if (mouseIsPressed) {
-        fill(255);
+        fill(r1, g1, b1);
+        r1++;
+        g1--;
+        b1--;
     } else {
-        fill(201);
+        fill(r2, g2, b2);
+        r2++;
+        g2++;
+        b2--;
     }
     ellipse(mouseX, mouseY, 50, 50);
 
     /*color c = color(82, 111, 132); //yellow
     fill(c);
-    noStroke();
     rect(250, 50, 300, 150); //body
 
     c = color(50, 55, 100); //dark blue
@@ -29,7 +42,6 @@ function draw() {
 
     c = color(255); //pink
     fill(c);
-    //noStroke();
     rect(490, 60, 50, 25); //flash
 
     c = color(89, 92, 96); //yellow
