@@ -6,7 +6,6 @@
 
 body {
     font-family: "Yantramanav", "Helvetica";
-    /*background-color: #a4a6a8;*/
     background-color: whitesmoke;
     width: 700px;
     margin: auto;
@@ -35,7 +34,6 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: white;*/
     font-family: "Avenir";
     color: #819fdb;
 }
@@ -48,14 +46,11 @@ header {
 section {
     display: flex;
     justify-content: center;
-    /*background-color: #f4b642;
-    background-color: #d8d7d4;*/
 }
 
 article {
     margin-top: 50px;
     margin-bottom: 100px;
-    /*color: white;*/
     color: black;
 }
 
