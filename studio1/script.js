@@ -5,14 +5,14 @@ console.log("this is a js comment");
 var img;
 
 function preload() {
-    img = loadImage("polar-bear.svg");
+    img = loadImage("polar-bear.png");
 }
 
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
-    loadImage("polar-bear.svg", function (img) {
+    loadImage("polar-bear.png", function (img) {
         image(img, 500, 200);
     });
 }
