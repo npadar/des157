@@ -79,7 +79,7 @@ function draw() {
 
 function night() {
     loadImage("background-img2.png", function (img) {
-        image(img, 0, 0);
+        image(img, 0, 0, img.width / 4, img.height / 4);
     });
 }
 
