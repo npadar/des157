@@ -55,7 +55,7 @@ function nightBack() {
         image(img, 0, 0, img.width / 4, img.height / 4);
     });
     loadImage("polar-bear.png", function (img) {
-        image(img, x + 300, y - 10, img.width / 2, img.height / 2);
+        image(img, x + 300, y - 10, img.width / 3, img.height / 3);
     });
 }
 
