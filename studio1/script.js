@@ -4,9 +4,9 @@ console.log("this is a js comment");
 
 var img;
 
-/*function preload() {
+function preload() {
     img = loadImage("polar-bear.svg");
-}*/
+}
 
 function setup() {
     var myCanvas = createCanvas(800, 250);
