@@ -1,24 +1,29 @@
 //Nicki Padar, 2017
-
+//interactive banner for studio1 portal
 console.log("this is a js comment");
+
+var img;
 
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
-    background(255);
+    //background(255);
+    img = loadImage("background-img.svg");
 }
 
-var r1 = 153;
+/*var r1 = 153;
 var r2 = 102;
 var g1 = 250;
 var g2 = 150;
 var b1 = 255;
-var b2 = 255;
+var b2 = 255;*/
 
 function draw() {
     // statements here
+    image(img, 0, 0);
 
-    noStroke();
+}
+/*noStroke();
     if (mouseIsPressed) {
         fill(r1, g1, b1);
         r1++;
@@ -42,25 +47,29 @@ function draw() {
     }
     ellipse(mouseX, mouseY, 50, 50);
 
-    /*color c = color(82, 111, 132); //yellow
-    fill(c);
+
+    fill(82, 111, 132); //turquoise
     rect(250, 50, 300, 150); //body
 
-    c = color(50, 55, 100); //dark blue
-    fill(c);
+    fill(50, 55, 100); //dark blue
     rect(250, 35, 50, 15); //button
 
-    c = color(255); //pink
-    fill(c);
+    fill(255); //white
     rect(490, 60, 50, 25); //flash
 
-    c = color(89, 92, 96); //yellow
-    fill(c);
-    //stroke(2);
+    fill(89, 92, 96); //dark gray
     ellipse(400, 130, 100, 100); //outer circle
 
-    c = color(140, 142, 145); //dark blue
-    fill(c);
-    ellipse(400, 130, 80, 80); //inner circle*/
+    fill(140, 142, 145); //light gray
+    ellipse(400, 130, 80, 80); //inner circle
+}*/
 
-}
+/*var value = 0;
+
+function mouseClicked() {
+    if (value == 0) {
+        background(255);
+    } else {
+        value = 255;
+    }
+}*/
