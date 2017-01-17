@@ -8,7 +8,8 @@ function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
-    myCanvas.mouseOver(moveBear);
+    myCanvas.mouseIsPressed(night);
+    myCanvas.mouseReleased(day);
 }
 
 var r1 = 153;
@@ -79,8 +80,14 @@ function draw() {
     //moveBear(mouseX, mouseY, img);
 }
 
-function moveBear(x + 100, y + 100, img) {
-    loadImage("polar-bear.png", function (img) {
-        image(img, x, y, img.width / 2, img.height / 2);
+function night() {
+    loadImage("background-img2.png", function (img) {
+        image(img, 0, 0);
+    });
+}
+
+function day() {
+    loadImage("background-img1.png", function (img) {
+        image(img, 0, 0);
     });
 }
