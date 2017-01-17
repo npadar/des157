@@ -21,9 +21,9 @@ y = 130;
 
 function draw() {
     // statements here
-    loadImage("polar-bear.png", function (img) {
-        image(img, x, y, img.width / 2, img.height / 2);
-    });
+    //loadImage("polar-bear.png", function (img) {
+    //    image(img, x, y, img.width / 2, img.height / 2);
+    //});
 
     /*noStroke();
     if (mouseIsPressed) {
@@ -55,12 +55,15 @@ function nightBack() {
         image(img, 0, 0, img.width / 4, img.height / 4);
     });
     loadImage("polar-bear.png", function (img) {
-        image(img, x + 100, y + 100, img.width / 2, img.height / 2);
+        image(img, x + 300, y - 10, img.width / 2, img.height / 2);
     });
 }
 
 function dayBack() {
     loadImage("background-img.png", function (img) {
         image(img, 0, 0, img.width / 4, img.height / 4);
+    });
+    loadImage("polar-bear.png", function (img) {
+        image(img, x, y, img.width / 2, img.height / 2);
     });
 }
