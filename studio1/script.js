@@ -8,6 +8,10 @@ function preload() {
     //img = loadImage("polar-bear.svg");
 }
 
+float x;
+float y;
+float easing = 0.05;
+
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
@@ -15,24 +19,24 @@ function setup() {
     loadImage("polar-bear.svg", function (img) {
         image(img, 500, 200);
     });
-
 }
 
-/*var r1 = 153;
+var r1 = 153;
 var r2 = 102;
 var g1 = 250;
 var g2 = 150;
 var b1 = 255;
-var b2 = 255;*/
+var b2 = 255;
 
 function draw() {
     // statements here
     //image(img, 0, 0);
-    image(img, 0, 0, 10, 10);
+    //image(img, 0, 0, 10, 10);
+    //float x;
+    //float y;
 
-}
-/*noStroke();
-    if (mouseIsPressed) {
+    noStroke();
+    /*if (mouseIsPressed) {
         fill(r1, g1, b1);
         r1++;
         g1--;
@@ -51,12 +55,26 @@ function draw() {
         g2 = 150;
         b1 = 255;
         b2 = 255;
-
     }
-    ellipse(mouseX, mouseY, 50, 50);
+
+    ellipse(mouseX, mouseY, 5, 5);
+    //text(mouseY, 100, 130);
+    if (mouseY > 130) {
+        mouseY = 120;
+    }*/
+
+    float targetX = mouseX;
+    float dx = targetX - x;
+    x += dx * easing;
+
+    float targetY = mouseY;
+    float dy = targetY - y;
+    y += dy * easing;
+
+    ellipse(x, y, 66, 66);
 
 
-    fill(82, 111, 132); //turquoise
+    /*fill(82, 111, 132); //turquoise
     rect(250, 50, 300, 150); //body
 
     fill(50, 55, 100); //dark blue
@@ -70,14 +88,15 @@ function draw() {
 
     fill(140, 142, 145); //light gray
     ellipse(400, 130, 80, 80); //inner circle
-}*/
-
-/*var value = 0;
-
-function mouseClicked() {
-    if (value == 0) {
-        background(255);
-    } else {
-        value = 255;
     }
-}*/
+
+    var value = 0;
+
+    function mouseClicked() {
+        if (value == 0) {
+            background(255);
+        } else {
+            value = 255;
+        }
+    }*/
+}
