@@ -81,13 +81,13 @@ function draw() {
 }
 
 function night() {
-    loadImage("background-img2.png", function (img) {
+    loadImage("background-img2.svg", function (img) {
         image(img, 0, 0);
     });
 }
 
 function day() {
-    loadImage("background-img1.png", function (img) {
+    loadImage("background-img.svg", function (img) {
         image(img, 0, 0);
     });
 }
