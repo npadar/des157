@@ -2,14 +2,14 @@
 //interactive banner for studio1 portal
 console.log("this is a js comment");
 
-var img;
+//var img;
 
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
-    myCanvas.mouseIsPressed(night);
-    myCanvas.mouseReleased(day);
+    myCanvas.mouseOver(night);
+    myCanvas.mouseOut(day);
 }
 
 var r1 = 153;
