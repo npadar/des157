@@ -37,17 +37,16 @@ function dayBack() {
     });
 }
 
+var starX = 100;
+var starY = 100;
+
 function draw() {
     // statements here
 
     noStroke();
     //background(255);
-    fill(219, 212, 212);
-
-    ellipse(leftX, leftY, 80, 60);
-    ellipse(middleX, middleY, 80, 60);
-    ellipse(rightX, rightY, 100, 60);
-    leftX++;
-    middleX++;
-    rightX++;
+    fill(255);
+    ellipse(starX, starY, 9, 9);
+    starX += 8;
+    starY--;
 }
