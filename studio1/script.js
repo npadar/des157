@@ -9,45 +9,29 @@ function setup() {
     myCanvas.mouseOut(dayBack);
 }
 
-var r1 = 153;
-var r2 = 102;
-var g1 = 250;
-var g2 = 150;
-var b1 = 255;
-var b2 = 255;
+var x = 100;
+var y = 130;
 
-x = 100;
-y = 130;
+var leftX = 30;
+var leftY = 80;
+var middleX = leftX + 35;
+var middleY = leftY - 30;
+var rightX = leftX + 70;
+var rightY = leftY + 10;
 
 function draw() {
     // statements here
-    //loadImage("polar-bear.png", function (img) {
-    //    image(img, x, y, img.width / 2, img.height / 2);
-    //});
 
-    /*noStroke();
-    if (mouseIsPressed) {
-        fill(r1, g1, b1);
-        r1++;
-        g1--;
-        b1--;
-    } else {
-        fill(r2, g2, b2);
-        r2++;
-        g2++;
-        b2--;
-    }
+    noStroke();
+    background(255);
+    fill(219, 212, 212);
 
-    if ((r2 == 255) || (r1 == 255)) {
-        r1 = 153;
-        r2 = 102;
-        g1 = 250;
-        g2 = 150;
-        b1 = 255;
-        b2 = 255;
-    }
-
-    ellipse(mouseX, mouseY, 5, 5);*/
+    ellipse(leftX, leftY, 80, 60);
+    ellipse(middleX, middleY, 80, 60);
+    ellipse(rightX, rightY, 100, 60);
+    leftX++;
+    middleX++;
+    rightX++;
 }
 
 function nightBack() {
