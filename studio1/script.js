@@ -23,7 +23,7 @@ function draw() {
     // statements here
 
     noStroke();
-    background(255);
+    //background(255);
     fill(219, 212, 212);
 
     ellipse(leftX, leftY, 80, 60);
