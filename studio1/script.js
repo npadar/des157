@@ -27,7 +27,7 @@ var b2 = 255;
 function draw() {
     // statements here
     //image(img, 0, 0);
-    //image(img, 0, 0, 10, 10);
+    image(img, 0, 0, 10, 10);
     //float x;
     //float y;
 
@@ -55,9 +55,6 @@ function draw() {
 
     ellipse(mouseX, mouseY, 5, 5);
     //text(mouseY, 100, 130);
-    if (mouseY > 130) {
-        mouseY = 120;
-    }
 
     /*fill(82, 111, 132); //turquoise
     rect(250, 50, 300, 150); //body
