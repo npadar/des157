@@ -46,7 +46,7 @@ function draw() {
     noStroke();
     //background(255);
     fill(255);
-    ellipse(starX, starY, 9, 9);
-    starX += 8;
-    starY--;
+    ellipse(starX, starY, 10, 10);
+    starX++;
+    starY -= .1;
 }
