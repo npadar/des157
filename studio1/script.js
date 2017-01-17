@@ -29,7 +29,7 @@ function draw() {
     //image(img, 0, 0);
     //image(img, 0, 0, 10, 10);
     loadImage("polar-bear.png", function (img) {
-        image(img, 200, 100);
+        image(img, 200, 100, img.width / 2, img.height / 2);
     });
 
     noStroke();
