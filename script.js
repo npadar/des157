@@ -21,12 +21,12 @@ var img4;
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
-    
+
     img = loadImage("background-img2.png"); //load image
     img2 = loadImage("polar-bear.png"); //load image
     img3 = loadImage("background-img.png"); //load image
     img4 = loadImage("polar-bear.png"); //load image
-    
+
     myCanvas.mouseOver(nightBack);
     myCanvas.mouseOut(dayBack);
 }
