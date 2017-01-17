@@ -30,7 +30,8 @@ h1 {
 header {
     width: 800px;
     height: 250px;
-    background-image: url(background-img.svg);
+    /*background-image: url(background-img.svg);*/
+    background-color: rgb(83, 220, 245);
 }
 
 section {

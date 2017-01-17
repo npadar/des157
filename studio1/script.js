@@ -2,9 +2,9 @@
 //interactive banner for studio1 portal
 console.log("this is a js comment");
 
-/*var img;
+var img;
 
-function preload() {
+/*function preload() {
     img = loadImage("polar-bear.svg");
 }*/
 
@@ -80,4 +80,9 @@ function draw() {
             value = 255;
         }
     }*/
+    moveBear(mouseX, mouseY, img);
+}
+
+var moveBear = function (x, y, img) {
+
 }
