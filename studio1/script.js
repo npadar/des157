@@ -28,6 +28,9 @@ function draw() {
     // statements here
     //image(img, 0, 0);
     //image(img, 0, 0, 10, 10);
+    loadImage("polar-bear.png", function (img) {
+        image(img, 500, 200);
+    });
 
     noStroke();
     if (mouseIsPressed) {
