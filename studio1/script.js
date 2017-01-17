@@ -8,6 +8,7 @@ function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
+    myCanvas.mouseOver(moveBear);
 }
 
 var r1 = 153;
@@ -17,13 +18,16 @@ var g2 = 150;
 var b1 = 255;
 var b2 = 255;
 
+x = 100;
+y = 130;
+
 function draw() {
     // statements here
     loadImage("polar-bear.png", function (img) {
-        image(img, 100, 130, img.width / 2, img.height / 2);
+        image(img, x, y, img.width / 2, img.height / 2);
     });
 
-    noStroke();
+    /*noStroke();
     if (mouseIsPressed) {
         fill(r1, g1, b1);
         r1++;
@@ -45,9 +49,7 @@ function draw() {
         b2 = 255;
     }
 
-    ellipse(mouseX, mouseY, 5, 5);
-
-    //text(mouseY, 100, 130);
+    ellipse(mouseX, mouseY, 5, 5);*/
 
     /*fill(82, 111, 132); //turquoise
     rect(250, 50, 300, 150); //body
@@ -74,9 +76,11 @@ function draw() {
             value = 255;
         }
     }*/
-    moveBear(mouseX, mouseY, img);
+    //moveBear(mouseX, mouseY, img);
 }
 
-var moveBear = function (x, y, img) {
-
+function moveBear(x + 100, y + 100, img) {
+    loadImage("polar-bear.png", function (img) {
+        image(img, x, y, img.width / 2, img.height / 2);
+    });
 }
