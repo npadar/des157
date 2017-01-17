@@ -2,14 +2,20 @@
 //interactive banner for studio1 portal
 console.log("this is a js comment");
 
-PShape s;
+var img;
+
+function preload() {
+    img = loadImage("polar-bear.svg");
+}
 
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
-    s = loadShape("polar-bear.svg");
-    shape(s);
+    loadImage("polar-bear.svg", function (img) {
+        image(img, 0, 0);
+    });
+
 }
 
 /*var r1 = 153;
