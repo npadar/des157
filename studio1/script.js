@@ -21,6 +21,7 @@ var b2 = 255;*/
 function draw() {
     // statements here
     image(img, 0, 0);
+    image(img, 0, 0, height, width);
 
 }
 /*noStroke();
