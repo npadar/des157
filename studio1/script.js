@@ -8,7 +8,7 @@ function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
-    img = loadImage("background-img.svg");
+    img = loadImage("background-img.jpg");
 }
 
 /*var r1 = 153;
