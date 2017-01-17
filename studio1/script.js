@@ -84,7 +84,7 @@ function night() {
 }
 
 function day() {
-    loadImage("background-img.svg", function (img) {
-        image(img, 0, 0)
+    loadImage("background-img.png", function (img) {
+        image(img, 0, 0, img.width / 4, img.height / 4)
     });
 }
