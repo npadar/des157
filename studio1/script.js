@@ -8,10 +8,6 @@ function preload() {
     //img = loadImage("polar-bear.svg");
 }
 
-float x;
-float y;
-float easing = 0.05;
-
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
@@ -36,7 +32,7 @@ function draw() {
     //float y;
 
     noStroke();
-    /*if (mouseIsPressed) {
+    if (mouseIsPressed) {
         fill(r1, g1, b1);
         r1++;
         g1--;
@@ -61,18 +57,7 @@ function draw() {
     //text(mouseY, 100, 130);
     if (mouseY > 130) {
         mouseY = 120;
-    }*/
-
-    float targetX = mouseX;
-    float dx = targetX - x;
-    x += dx * easing;
-
-    float targetY = mouseY;
-    float dy = targetY - y;
-    y += dy * easing;
-
-    ellipse(x, y, 66, 66);
-
+    }
 
     /*fill(82, 111, 132); //turquoise
     rect(250, 50, 300, 150); //body
