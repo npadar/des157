@@ -4,17 +4,10 @@ console.log("this is a js comment");
 
 var img;
 
-function preload() {
-    //img = loadImage("polar-bear.svg");
-}
-
 function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
-    /*loadImage("polar-bear.svg", function (img) {
-        image(img, 500, 200);
-    });*/
 }
 
 var r1 = 153;
@@ -26,10 +19,8 @@ var b2 = 255;
 
 function draw() {
     // statements here
-    //image(img, 0, 0);
-    //image(img, 0, 0, 10, 10);
     loadImage("polar-bear.png", function (img) {
-        image(img, 200, 100, img.width / 2, img.height / 2);
+        image(img, 100, 130, img.width / 2, img.height / 2);
     });
 
     noStroke();
