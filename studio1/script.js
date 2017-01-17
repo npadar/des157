@@ -2,11 +2,11 @@
 //interactive banner for studio1 portal
 console.log("this is a js comment");
 
-var img;
+/*var img;
 
 function preload() {
-    //img = loadImage("polar-bear.svg");
-}
+    img = loadImage("polar-bear.svg");
+}*/
 
 function setup() {
     var myCanvas = createCanvas(800, 250);
@@ -27,9 +27,7 @@ var b2 = 255;
 function draw() {
     // statements here
     //image(img, 0, 0);
-    image(img, 0, 0, 10, 10);
-    //float x;
-    //float y;
+    //image(img, 0, 0, 10, 10);
 
     noStroke();
     if (mouseIsPressed) {
@@ -54,6 +52,7 @@ function draw() {
     }
 
     ellipse(mouseX, mouseY, 5, 5);
+
     //text(mouseY, 100, 130);
 
     /*fill(82, 111, 132); //turquoise
