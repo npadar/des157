@@ -8,7 +8,7 @@ function setup() {
     var myCanvas = createCanvas(800, 250);
     myCanvas.parent('mySketch');
     //background(255);
-    img = loadImage("banner.svg");
+    img = loadImage("polar-bear.png");
 }
 
 /*var r1 = 153;
@@ -20,7 +20,7 @@ var b2 = 255;*/
 
 function draw() {
     // statements here
-    image(img, 0, 0);
+    //image(img, 0, 0);
     image(img, 0, 0, height, width);
 
 }
