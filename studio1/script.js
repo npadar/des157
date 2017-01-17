@@ -22,7 +22,7 @@ y = 130;
 function draw() {
     // statements here
     loadImage("polar-bear.png", function (img) {
-        image(img, x, y, img.width / 2, img.height / 2)
+        image(img, x, y, img.width / 2, img.height / 2);
     });
 
     /*noStroke();
@@ -79,12 +79,12 @@ function draw() {
 
 function night() {
     loadImage("background-img2.png", function (img) {
-        image(img, 0, 0, img.width / 4, img.height / 4)
+        image(img, 0, 0, img.width / 4, img.height / 4);
     });
 }
 
 function day() {
     loadImage("background-img.png", function (img) {
-        image(img, 0, 0, img.width / 4, img.height / 4)
+        image(img, 0, 0, img.width / 4, img.height / 4);
     });
 }
