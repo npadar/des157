@@ -26,6 +26,9 @@ function setup() {
     img2 = loadImage("polar-bear.png"); //load image
     img3 = loadImage("background-img.png"); //load image
     img4 = loadImage("polar-bear.png"); //load image
+    
+    myCanvas.mouseOver(nightBack);
+    myCanvas.mouseOut(dayBack);
 }
 
 function draw() {
@@ -37,9 +40,6 @@ function draw() {
     ellipse(starX, starY, 10, 10);
     starX++;
     starY -= .1;
-    
-    myCanvas.mouseOver(nightBack);
-    myCanvas.mouseOut(dayBack);
 }
 
 function nightBack() {
