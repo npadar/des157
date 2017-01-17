@@ -12,6 +12,10 @@ var rightX = leftX + 70;
 var rightY = leftY + 10;
 var starX = 100;
 var starY = 100;
+var img1;
+var img2;
+var img3;
+var img4;
 
 
 function setup() {
@@ -34,19 +38,19 @@ function draw() {
 }
 
 function nightBack() {
-    loadImage("background-img2.png", function (img) {
-        image(img, 0, 0, img.width / 4, img.height / 4);
+    loadImage("background-img2.png", function (img1) {
+        image(img1, 0, 0, img.width / 4, img.height / 4);
     });
-    loadImage("polar-bear.png", function (img) {
-        image(img, x + 300, y - 10, img.width / 3, img.height / 3);
+    loadImage("polar-bear.png", function (img2) {
+        image(img2, x + 300, y - 10, img.width / 3, img.height / 3);
     });
 }
 
 function dayBack() {
-    loadImage("background-img.png", function (img) {
-        image(img, 0, 0, img.width / 4, img.height / 4);
+    loadImage("background-img.png", function (img3) {
+        image(img3, 0, 0, img.width / 4, img.height / 4);
     });
-    loadImage("polar-bear.png", function (img) {
-        image(img, x, y, img.width / 2, img.height / 2);
+    loadImage("polar-bear.png", function (img4) {
+        image(img4, x, y, img.width / 2, img.height / 2);
     });
 }
