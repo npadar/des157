@@ -12,10 +12,10 @@ var rightX = leftX + 70;
 var rightY = leftY + 10;
 var starX = 100;
 var starY = 100;
-var img1;
-var img2;
-var img3;
-var img4;
+PImage img1;
+PImage img2;
+PImage img3;
+PImage img4;
 
 
 function setup() {
