@@ -13,7 +13,7 @@ function setup() {
     myCanvas.parent('mySketch');
     //background(255);
     loadImage("polar-bear.svg", function (img) {
-        image(img, 0, 100);
+        image(img, 100, 100);
     });
 
 }
