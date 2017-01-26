@@ -44,6 +44,23 @@ h2 {
     color: black;
 }
 
+article {
+  margin-bottom: 60px;
+}
+
+img {
+  width: 600px;
+}
+
+.source {
+  font-size: 0.6em;
+}
+
+img {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
 a {
     text-decoration: none;
     color: black;
