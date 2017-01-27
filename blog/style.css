@@ -15,6 +15,12 @@ h1 {
     text-align: center;
     font-size: 2em;
     text-transform: uppercase;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Avenir";
+    color: #819fdb;
 }
 
 nav {
@@ -27,15 +33,6 @@ nav a {
     color: black;
     text-decoration: none;
     font-size: .9em;
-}
-
-.name {
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Avenir";
-    color: #819fdb;
 }
 
 section {
