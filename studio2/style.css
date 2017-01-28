@@ -10,6 +10,11 @@
     padding: 0px
 }
 
+/*@font-face {
+  font-family: "Comic Sans";
+  src: url();
+}*/
+
 body {
   font-family: "Gloria Hallelujah";
   width: 800px;
@@ -22,4 +27,94 @@ h1 {
   font-size: 3em;
   margin: auto;
   margin-top: 50px;
+}
+
+/*img {
+  float: left;
+}
+
+article {
+  clear: left;
+  margin-top: 30px;
+}*/
+
+.doge {
+  font-family: "Comic Sans MS";
+  position: relative;
+  margin-top: 100px;
+}
+
+.dogeline1 {
+  position: absolute;
+  color: magenta;
+  top: 100px;
+  left: 250px;
+}
+
+.dogeline2 {
+  position: absolute;
+  color: blue;
+  top: 200px;
+  left: 350px;
+  font-size: 1.5em;
+}
+
+.dogeline3 {
+  position: absolute;
+  color: green;
+  top: 250px;
+  left: 100px;
+  font-size: 1.3em;
+}
+
+.dogeline4 {
+  position: absolute;
+  color: yellow;
+  top: 300px;
+  left: 300px;
+}
+
+.dogeline5 {
+  position: absolute;
+  color: purple;
+  top: 400px;
+  left: 100px;
+  font-size: 2em;
+}
+
+.kermit {
+  font-family: "Helvetica";
+  font-weight: lighter;
+  position: relative;
+  margin-top: 100px;
+}
+
+.teacher {
+  font-family: "Impact";
+  position: relative;
+  text-shadow: 0 0 5px black;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+.teacherline1{
+  position: absolute;
+  left: 150px;
+  font-size: 2em;
+}
+
+.teacherline2{
+  position: absolute;
+  top: 30px;
+  left: 130px;
+  font-size: 2em;
+}
+
+.teacherline3{
+  position: absolute;
+  top: 230px;
+  font-size: 1.5em;
+  width: 500px;
+  left: 30px;
 }
