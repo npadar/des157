@@ -57,6 +57,10 @@ h2 {
     text-align: left;
     font-size: .9em;
     text-transform: uppercase;
+    background-color: #819fdb;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 a:hover {
