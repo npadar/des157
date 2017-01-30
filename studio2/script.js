@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
     document.f.onsubmit = processForm; //capture the submit event
+    document.f.onreset = clearForm;
 
     function processForm() {
       var adj1 = document.f.adj1.value; //doge adj
@@ -36,7 +37,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         teachMsg.innerHTML = "Test: Calculate the " + obj1 + "\'s " + "mass using the " + noun2 +
         "\'s centrifugal force, and the gravitational force between the " + noun3 + " and the "
         + noun4;
+
+        /*kermit.className = "show";*/
     }
     return false; //prevent page from reloading
+  }
+
+  function clearForm() {
+    doge1.innerHTML = " ";
+    doge2.innerHTML = " ";
+    doge3.innerHTML = " ";
+    kermit1.innerHTML = " ";
+    kermit2.innerHTML = " ";
+    teachMsg.innerHTML = " ";
   }
 });
