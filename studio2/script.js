@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       alert("You left a field blank!!"); //form alert
     }
     else {
-        var doge1 = document.getElementById("doge1");
+        var doge1 = document.getElementById("doge1"); //get elements by ID
         var doge2 = document.getElementById("doge2");
         var doge3 = document.getElementById("doge3");
         var kermit1 = document.getElementById("kermit1");
         var kermit2 = document.getElementById("kermit2");
         var teachMsg = document.getElementById("teachMsg");
 
-        doge1.innerHTML = "so " + adj1;
+        doge1.innerHTML = "so " + adj1; //insert elements into the HTML
         doge2.innerHTML = "many " + noun1;
         doge3.innerHTML = "very " + adj2;
         kermit1.innerHTML = "Me: just sleep " + num1 + " more minutes";
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     return false; //prevent page from reloading
   }
 
-  function clearForm() {
+  function clearForm() { //resets the form
     doge1.innerHTML = " ";
     doge2.innerHTML = " ";
     doge3.innerHTML = " ";
