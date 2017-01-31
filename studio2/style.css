@@ -19,10 +19,25 @@ body {
 
 h1 {
   font-family: "Permanent Marker";
-  text-align: right;
+  text-align: center;
   font-size: 3em;
   margin: auto;
   margin-top: 50px;
+}
+
+.kermitgif {
+  width: 100%;
+}
+
+.gif {
+  width: 50%;
+}
+
+.input {
+  float: right;
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 80px;
 }
 
 .doge {
