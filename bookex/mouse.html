@@ -1,0 +1,50 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CH14 | Mouse Trail</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CH3 Minimum</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
+        var minNum;
+
+        function min(num1, num2) {
+            if (num1 > num2) {
+                minNum = num2;
+            } else {
+                minNum = num1;
+            }
+            return minNum;
+        }
+
+        console.log(min(0, 10));
+        console.log(min(0, -10));
+        console.log(min(3, 5));
+        console.log(min(-8, -1));
+        console.log(min(-7, 9));
+    </script>
+</body>
