@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+@keyframes hovering {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+#close {
+  position: absolute;
+  top: 30%;
+  right: 30px;
+}
+
+section p {
+  position: relative;
+  top: 40%;
+  text-align: center;
+}
+
+#person {
+  position: absolute;
+}
+
+#lanyard {
+  position: relative;
+  top: 130px;
+  left: 60px;
+}
