@@ -55,31 +55,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     hawaii.addEventListener("click", function () {
       console.log("hawaii clicked");
-      document.getElementById("hawaiiAnswer").className = "show";
+      hawaiiAnswer.style.display = "block";
+      //document.getElementById("hawaiiAnswer").className = "show";
       document.getElementById("hawaiiAnswer").className = "answer";
     })
 
     iceland.addEventListener("click", function () {
       console.log("iceland clicked");
-      document.getElementById("icelandAnswer").className = "show";
+      icelandAnswer.style.display = "block";
+      //document.getElementById("icelandAnswer").className = "show";
       document.getElementById("icelandAnswer").className = "answer";
     })
 
     clog.addEventListener("click", function () {
       console.log("clog clicked");
-      document.getElementById("clogAnswer").className = "show";
+      clogAnswer.style.display = "block";
+      //document.getElementById("clogAnswer").className = "show";
       document.getElementById("clogAnswer").className = "answer";
     })
 
     mickey.addEventListener("click", function () {
       console.log("mickey clicked");
-      document.getElementById("mickeyAnswer").className = "show";
+      mickeyAnswer.style.display = "block";
+      //document.getElementById("mickeyAnswer").className = "show";
       document.getElementById("mickeyAnswer").className = "answer";
     })
 
     italy.addEventListener("click", function () {
       console.log("italy clicked");
-      document.getElementById("italyAnswer").className = "show";
+      //document.getElementById("italyAnswer").className = "show";
+      italyAnswer.style.display = "block";
       document.getElementById("italyAnswer").className = "answer";
     })
 
