@@ -145,11 +145,8 @@ h2 {
   font-size: 0.8em;
 }
 
-#close {
-  font-size: 1em;
-}
-
-#close {
+.close {
+  font-size: 3em;
   position: relative;
 }
 
