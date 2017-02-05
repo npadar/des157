@@ -16,6 +16,10 @@ body {
   color: black;
 }
 
+.heading {
+  display: none;
+}
+
 main {
   position: relative;
   width: 900px;
