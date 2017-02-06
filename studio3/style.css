@@ -52,6 +52,25 @@ main img {
   text-align: center;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+#hair:hover {
+  transform: rotate(5deg);
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
 #lanyard {
   top: 80px;
   left: 260px;
