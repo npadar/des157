@@ -10,6 +10,15 @@
     padding: 0px
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: "Quicksand", "Avenir", sans-serif;
   background-color: #f7efb2;
@@ -25,6 +34,8 @@ main {
   width: 900px;
   /*font-size: 1.7em;
   color: black;*/
+  animation-name: fadein;
+  animation-duration: 5s;
 }
 
 main img {
