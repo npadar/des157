@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("hawaii clicked");
       hawaiiAnswer.style.display = "block"; //show the answer
       //document.getElementById("hawaiiAnswer").className = "show";
-      document.getElementById("hawaiiAnswer").className = "answer"; //style 
+      document.getElementById("hawaiiAnswer").className = "answer"; //style
     })
 
     iceland.addEventListener("click", function () {
@@ -69,9 +69,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.getElementById("italyAnswer").className = "answer";
     })
 
-    for (var i = 0; i < close.length; i++) {
-      close[i].addEventListener("click", function () {
-        this.parentElement.style.display = "none";
+
+    //add event listener for close
+    for (var i = 0; i < close.length; i++) { //loop through all the classes named close
+      close[i].addEventListener("click", function () { //if theres a click
+        this.parentElement.style.display = "none"; //the parent (which is the whole answer section) displays none
         //this.style.cursor = "pointer";
         //var attribute = getAttribute("id") + "Answer";
         //console.log("close");
