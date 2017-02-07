@@ -22,29 +22,32 @@
         h1 {
             margin-bottom: 24px;
         }
+
+        .trail { /* className for the trail elements */
+          position: absolute;
+          height: 6px;
+          width: 6px;
+          border-radius: 3px;
+          background: teal;
+        }
     </style>
 </head>
 
 <body>
-    <h1>CH3 Minimum</h1>
+    <h1>CH14 Mouse Trail</h1>
     <h2>open the console to see the results of the script</h2>
     <script>
         // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
-        var minNum;
+        /*addEventListener("click", function(event) {
+        var dot = document.createElement("div");
+        dot.className = "dot";
+        dot.style.left = (event.pageX - 4) + "px";
+        dot.style.top = (event.pageY - 4) + "px";
+        document.body.appendChild(dot);
+      });*/
 
-        function min(num1, num2) {
-            if (num1 > num2) {
-                minNum = num2;
-            } else {
-                minNum = num1;
-            }
-            return minNum;
-        }
 
-        console.log(min(0, 10));
-        console.log(min(0, -10));
-        console.log(min(3, 5));
-        console.log(min(-8, -1));
-        console.log(min(-7, 9));
+
+
     </script>
 </body>

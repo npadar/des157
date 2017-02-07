@@ -4,14 +4,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
     // all other js here
-    /*var imgs = ["images/clog.png", "images/iceland.png", "images/extra-01.png",
-    "images/extra-02.png", "images/hawaii.png"];
-
-    var preload = []; //preload images
-    for(var i = 0; i<imgs.length; i++) {
-      preload[i] = new Image();
-      preload[i].src = imgs[i];
-    }*/
 
     var lanyard = document.getElementById("lanyard");
     var hair = document.getElementById("hair");
@@ -35,29 +27,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //console.log(imgs.length);
 
     /*for (var i = 0; i < imgs.length; i++) {
-      console.log(imgs[i]);
       imgs[i].addEventListener("click", function () {
-        console.log("clicked" + imgs[i]);
-        document.getElementById("hawaiiAnswer").className = "show";
+        var attribute = getAttribute(this) + "Answer";
+        attribute.style.display = "block";
       })
     }*/
 
-    /*for (var i = 0; i < answers.length; i++) {
-      console.log(imgs[i]);
-      console.log(answers[i]);
-      imgs[i].addEventListener("click", function () {
-        console.log(imgs[i]);
-        console.log(answers[i]);
-        document.answers[i].p.className = "show";
-        document.answers[i].p.className = "answer";
-      })
-    }*/
-
+    //add event listerns to all the objects
     hawaii.addEventListener("click", function () {
       console.log("hawaii clicked");
-      hawaiiAnswer.style.display = "block";
+      hawaiiAnswer.style.display = "block"; //show the answer
       //document.getElementById("hawaiiAnswer").className = "show";
-      document.getElementById("hawaiiAnswer").className = "answer";
+      document.getElementById("hawaiiAnswer").className = "answer"; //style 
     })
 
     iceland.addEventListener("click", function () {
@@ -88,19 +69,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.getElementById("italyAnswer").className = "answer";
     })
 
-    /*for (var i = 0; i < close.length; i++) {
-      close[i].addEventListener("click", function () {
-        console.log(close.length);
-        console.log("close click" + close[i]);
-        document.getElementsByClassName("close").className = "hidden";
-        //close[i].style.cursor = "pointer";
-      })
-    }*/
-
-    //close.addEventListener("click", function () {
-    //  document.getElementById("hawaiiAnswer").className = "hidden";
-    //})
-
     for (var i = 0; i < close.length; i++) {
       close[i].addEventListener("click", function () {
         this.parentElement.style.display = "none";
@@ -110,11 +78,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //document.getElementsByClassName("close").className = "hidden";
       });
     }
-
-    /*close.addEventListener("click", function () {
-      console.log("closeclicked");
-      answerHawaii.style.display="none";
-      close.style.cursor = "pointer";
-    });*/
-
 });
