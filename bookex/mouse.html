@@ -38,13 +38,13 @@
     <h2>open the console to see the results of the script</h2>
     <script>
         // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
-        /*addEventListener("click", function(event) {
-        var dot = document.createElement("div");
-        dot.className = "dot";
-        dot.style.left = (event.pageX - 4) + "px";
-        dot.style.top = (event.pageY - 4) + "px";
-        document.body.appendChild(dot);
-      });*/
+      addEventListener("mousemove", function(event) {
+        var trail = document.createElement("div");
+        trail.className = "trail";
+        trail.style.left = (event.pageX - 4) + "px";
+        trail.style.top = (event.pageY - 4) + "px";
+        document.body.appendChild(trail);
+      });
 
 
 
