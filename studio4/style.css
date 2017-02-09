@@ -2,6 +2,7 @@
 
 /* CSS Document */
 
+
 /* start all css with a reset */
 
 * {
@@ -10,54 +11,71 @@
 }
 
 h1 {
-  position: absolute;
-  z-index: 1;
-  left: 500px;
-  top: 50px;
+    position: absolute;
+    z-index: 1;
+    left: 500px;
+    top: 50px;
+}
+
+main {
+    position: relative;
+    width: 1250px;
+}
+
+main img {
+    position: absolute;
+}
+
+p {
+    width: 8in;
+    margin: 0px auto;
+    text-align: center;
+    display: inline-block;
+    position: relative;
 }
 
 #background {
-  width: 100%;
-  position: relative;
+    max-width: 100%;
+    margin: auto;
 }
 
 #film {
-  position: absolute;
-  top: 410px;
-  left: 1100px;
+    /*position: absolute;*/
+    top: 410px;
+    left: 1100px;
 }
 
 #film2 {
-  position: absolute;
-  top: 500px;
-  left: 1120px;
+    /*position: absolute;*/
+    top: 500px;
+    left: 1120px;
 }
 
 #timer {
-  position: absolute;
-  top: 430px;
-  left: 770px;
+    /*position: absolute;*/
+    top: 430px;
+    left: 770px;
 }
 
 #timer2 {
-  position: absolute;
-  top: 430px;
-  left: 1070px;
+    /*position: absolute;*/
+    top: 430px;
+    left: 1070px;
 }
 
 #timer3 {
-  position: absolute;
-  top: 430px;
-  left: 500px;
+    /*position: absolute;*/
+    top: 430px;
+    left: 500px;
 }
 
 #timer4 {
-  position: absolute;
-  top: 430px;
-  left: 240px;
+    /*position: absolute;*/
+    top: 430px;
+    left: 240px;
 }
 
 #final-image {
-  position: absolute;
-  top: 0px;
+    /*position: absolute;*/
+    top: 0px;
 }
