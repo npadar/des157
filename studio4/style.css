@@ -10,6 +10,10 @@
     padding: 0px
 }
 
+body {
+  background-color: #A12A2E;
+}
+
 h1 {
     position: absolute;
     z-index: 1;
@@ -19,8 +23,8 @@ h1 {
 
 main {
     position: relative;
-    /*width: 1250px;*/
-    max-width: 100%;
+    width: 1250px;
+    /*max-width: 100%;*/
 }
 
 main img {
