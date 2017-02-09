@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+h1 {
+  position: absolute;
+  z-index: 1;
+  left: 500px;
+  top: 50px;
+}
+
+#background {
+  width: 100%;
+  position: relative;
+}
+
+#film {
+  position: absolute;
+  top: 410px;
+  left: 1100px;
+}
+
+#film2 {
+  position: absolute;
+  top: 500px;
+  left: 1120px;
+}
+
+#timer {
+  position: absolute;
+  top: 430px;
+  left: 770px;
+}
+
+#timer2 {
+  position: absolute;
+  top: 430px;
+  left: 1070px;
+}
+
+#timer3 {
+  position: absolute;
+  top: 430px;
+  left: 500px;
+}
+
+#timer4 {
+  position: absolute;
+  top: 430px;
+  left: 240px;
+}
+
+#final-image {
+  position: absolute;
+  top: 0px;
+}
