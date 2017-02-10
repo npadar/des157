@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     timer2.addEventListener("click", function () {
       console.log("orange timer clicked");
-      timerInterval = setInterval(countDown, 1000);
+      timerInterval = setInterval(countDown1, 1000);
     })
 
-    function countDown () {
+    function countDown1 () {
       if (seconds == 0) {
         clearInterval(timerInterval);
         picture.style.opacity = .3;
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       else {
         seconds--;
       }
-      
-      document.getElementById("countdown").innerHTML =
+
+      document.getElementById("countdown1").innerHTML =
       "Time Left: " + seconds + " seconds";
     }
 });

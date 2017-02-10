@@ -58,8 +58,35 @@ p {
 
 #film2 {
     /*position: absolute;*/
-    top: 500px;
-    left: 1120px;
+  top: 500px;
+  left: 1120px;
+}
+
+#film2:hover {
+  width: 110px;
+}
+
+#filmTip {
+  opacity: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.timer:hover {
+  transform: rotate(5deg);
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 #timer {
