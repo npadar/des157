@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 /* CSS Document */
-
-
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Black+Ops+One|Bungee|Monoton|Rubik:900');
 /* start all css with a reset */
 
 * {
@@ -12,12 +11,13 @@
 
 body {
   background-color: #A12A2E;
+  font-family: "Bungee";
 }
 
 h1 {
     position: absolute;
     z-index: 1;
-    left: 500px;
+    left: 400px;
     top: 50px;
 }
 
@@ -86,6 +86,13 @@ p {
     left: 240px;
 }
 
+#picture {
+  top: 465px;
+  left: 890px;
+  width: 50px;
+  opacity: 0;
+}
+
 #final-image {
     /*position: absolute;*/
     top: 0px;
@@ -93,4 +100,21 @@ p {
 
 .hidden {
   display: none;
+}
+
+footer {
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  text-align: center;
+  top: 800px;
+}
+
+footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

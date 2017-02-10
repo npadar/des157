@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var timer4 = document.getElementById("timer4");
     var msg = document.getElementById("msg");
     var countdown = document.getElementById("countdown");
+    var picture = document.getElementById("picture");
 
     var tipTimer;
     var timerInterval;
@@ -45,10 +46,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function countDown () {
       if (seconds == 0) {
         clearInterval(timerInterval);
+        picture.style.opacity = .3;
       }
       else {
         seconds--;
       }
+      
       document.getElementById("countdown").innerHTML =
       "Time Left: " + seconds + " seconds";
     }
