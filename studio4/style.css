@@ -66,7 +66,8 @@ p {
   width: 110px;
 }
 
-#filmTip {
+#filmTip, #countdown1Tip, #countdown2Tip,
+#countdown3Tip, #countdown4Tip {
   opacity: 0;
 }
 
@@ -89,26 +90,60 @@ p {
   animation-iteration-count: infinite;
 }
 
+.timerwatch {
+  position: absolute;
+  top: 700px;
+  color: gray;
+}
+
+.orange {
+  left: 550px;
+}
+
+.red {
+  left: 280px;
+}
+
+.pink{
+  left: 10px;
+}
+
+.blue {
+  left: -250px;
+}
+
+.tip {
+  position: absolute;
+  padding:14px;
+  font-size:10px;
+  color:#222;
+  background-color: rgba(255, 255, 255, 0.5);
+  /*top: 400px;
+  display: inline-block;
+  width: 100px;
+  left: 50%;*/
+}
+
+div {
+  display: inline-block;
+}
+
 #timer {
-    /*position: absolute;*/
     top: 430px;
     left: 770px;
 }
 
 #timer2 {
-    /*position: absolute;*/
     top: 430px;
     left: 1070px;
 }
 
 #timer3 {
-    /*position: absolute;*/
     top: 430px;
     left: 500px;
 }
 
 #timer4 {
-    /*position: absolute;*/
     top: 430px;
     left: 240px;
 }
@@ -127,8 +162,21 @@ p {
   opacity: 0;
 }
 
+#picture3 {
+  top: 460px;
+  left: 370px;
+  width: 50px;
+  opacity: 0;
+}
+
+#picture4 {
+  width: 50px;
+  top: 460px;
+  left: 120px;
+  opacity: 0;
+}
+
 #final-image {
-    /*position: absolute;*/
     top: 0px;
 }
 
