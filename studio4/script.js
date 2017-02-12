@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var timer2 = document.getElementById("timer2");
     var timer3 = document.getElementById("timer3");
     var timer4 = document.getElementById("timer4");
-    var msg = document.getElementById("msg");
+    //var msg = document.getElementById("msg");
     var countdown1 = document.getElementById("countdown1");
     var countdown2 = document.getElementById("countdown2");
     var countdown3 = document.getElementById("countdown3");
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var picture1 = document.getElementById("picture1");
     var picture2 = document.getElementById("picture2");
     var picture3 = document.getElementById("picture3");
+    var picture4 = document.getElementById("picture4");
 
     var tipTimer;
     var timerInterval;
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     function showFilmTip() {
-      console.log("showing msg");
+      console.log("showing film tip");
       filmTip.style.opacity = 1;
     }
 
@@ -40,24 +41,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
       filmTip.style.opacity = 0;
     });
 
-    film2.addEventListener("click", function () {
-      console.log("film clicked");
-      msg.style.display = "block";
-    })
+    //film2.addEventListener("click", function () {
+      //console.log("film clicked");
+      //msg.style.display = "block";
+    //})
 
     //orange timer functions
+
     timer2.addEventListener("mouseover", function () {
       console.log("mouse over timer1");
       var tipTimer = setTimeout(showTimerTip, 1000);
     })
 
     function showTimerTip() {
-      console.log("msg");
+      console.log("orange timer msg");
       countdown1Tip.style.opacity = 1;
     }
 
     timer2.addEventListener("mouseout", function () {
-      console.log("mouse out");
+      console.log("orange mouse out");
       clearTimeout(tipTimer);
       countdown1Tip.style.opacity = 0;
     })
@@ -85,10 +87,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     timer.addEventListener("mouseover", function () {
       console.log("mouseover red timer");
       var tipTimer = setTimeout(showTimerTip2, 1000);
-    })
+    });
 
     function showTimerTip2() {
-      console.log("msg");
+      console.log("red message");
       countdown2Tip.style.opacity = 1;
     }
 
@@ -96,13 +98,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("mouseout red timer");
       clearTimeout(tipTimer);
       countdown2Tip.style.opacity = 0;
-    })
+    });
 
     timer.addEventListener("click", function () {
       console.log("red timer clicked");
       picture1.style.opacity = 0;
       timerInterval = setInterval(countDown2, 1000);
-    })
+    });
 
     function countDown2 () {
       if(seconds10 == 0 ) {
@@ -122,10 +124,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     timer3.addEventListener("mouseover", function () {
       console.log("mouseover pink");
       var tipTimer = setTimeout(showTimerTip3, 1000);
-    })
+    });
 
     function showTimerTip3() {
-      console.log("tip3 msg");
+      console.log("pink msg");
       countdown3Tip.style.opacity = 1;
     }
 
@@ -133,13 +135,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("mouseout pink");
       clearTimeout(tipTimer);
       countdown3Tip.style.opacity = 0;
-    })
+    });
 
     timer3.addEventListener("click", function () {
       console.log("pink clicked");
       picture2.style.opacity = 0;
       timerInterval = setInterval(countDown3, 1000);
-    })
+    });
 
     var seconds7 = 7;
     function countDown3 () {
@@ -159,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     timer4.addEventListener("mouseover", function () {
       console.log("mouseover blue");
       var tipTimer = setTimeout(showTimerTip4, 1000);
-    })
+    });
 
     function showTimerTip4() {
       countdown4Tip.style.opacity = 1;
@@ -169,13 +171,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("mouseout blue");
       clearTimeout(tipTimer);
       countdown4Tip.style.opacity = 0;
-    })
+    });
 
     timer4.addEventListener("click", function () {
       console.log("blue clicked");
       picture3.style.opacity = 0;
       timerInterval = setInterval(countDown4, 1000);
-    })
+    });
 
     var seconds5 = 5;
     function countDown4 () {
@@ -191,4 +193,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       "Time Left: " + seconds5 + " seconds";
     }
 
+    //final image functions
+    picture4.addEventListener("click", function () {
+      final.style.opacity = 1;
+    })
 });
