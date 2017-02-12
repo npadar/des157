@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var picture2 = document.getElementById("picture2");
     var picture3 = document.getElementById("picture3");
     var picture4 = document.getElementById("picture4");
+    var close = document.getElementById("close");
 
     var tipTimer;
     var timerInterval;
@@ -196,5 +197,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //final image functions
     picture4.addEventListener("click", function () {
       final.style.opacity = 1;
+      close.style.opacity = 1;
+    })
+
+    //close function
+    close.addEventListener("click", function () {
+      console.log("clicked close");
+      final.style.opacity = 0;
+      close.style.opacity = 0;
     })
 });

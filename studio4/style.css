@@ -210,6 +210,12 @@ div {
   left: 50%;
 }
 
+#close {
+  font-size: 3em;
+  position: relative;
+  opacity: 0;
+}
+
 .hidden {
   display: none;
 }
