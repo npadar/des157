@@ -10,12 +10,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var timer3 = document.getElementById("timer3");
     var timer4 = document.getElementById("timer4");
     var msg = document.getElementById("msg");
-    var countdown = document.getElementById("countdown");
-    var picture = document.getElementById("picture");
+    var countdown1 = document.getElementById("countdown1");
+    var countdown2 = document.getElementById("countdown2");
+    var countdown3 = document.getElementById("countdown3");
+    var countdown4 = document.getElementById("countdown4");
+    var picture1 = document.getElementById("picture1");
+    var picture2 = document.getElementById("picture2");
+    var picture3 = document.getElementById("picture3");
 
     var tipTimer;
     var timerInterval;
-    var seconds = 15;
+    var seconds15 = 15;
+    var seconds10 = 10;
 
     film2.addEventListener("mouseover", function () {
       console.log("mouse over film");
@@ -44,15 +50,45 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 
     function countDown1 () {
-      if (seconds == 0) {
+      if (seconds15 == 0) {
         clearInterval(timerInterval);
-        picture.style.opacity = .3;
+        picture1.style.opacity = .3;
       }
       else {
-        seconds--;
+        seconds15--;
       }
 
       document.getElementById("countdown1").innerHTML =
-      "Time Left: " + seconds + " seconds";
+      "Time Left: " + seconds15 + " seconds";
     }
+
+    picture1.addEventListener("mouseover", function () {
+      tipTimer = setTimeout(showPicTip, 1000);
+    })
+
+    picture1.addEventListener("mouseout", function () {
+      clearTimeout(tipTimer);
+      picTip.style.opacity = 0;
+    })
+
+    timer.addEventListener("click", function () {
+      console.log("red timer clicked");
+      timerInterval(countDown2, 1000);
+    })
+
+    function countDown2 () {
+      if(seconds10 ==0 ) {
+        clearInterval(timerInterval);
+        picture1.style.opacity = .6;
+      }
+      else {
+        seconds10--;
+      }
+
+      document.getElementById("countdown2").innerHTML =
+      "Time Left: " + seconds10 + " seconds";
+    }
+
+
+
 });

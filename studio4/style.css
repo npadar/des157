@@ -113,9 +113,16 @@ p {
     left: 240px;
 }
 
-#picture {
+#picture1 {
   top: 465px;
   left: 890px;
+  width: 50px;
+  opacity: 0;
+}
+
+#picture2 {
+  top: 465px;
+  left: 630px;
   width: 50px;
   opacity: 0;
 }
