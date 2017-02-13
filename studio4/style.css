@@ -41,6 +41,10 @@ p {
     position: relative;
 }
 
+h2 {
+  display: none;
+}
+
 #background {
     max-width: 100%;
     margin: auto;
