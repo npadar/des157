@@ -21,6 +21,14 @@ h1 {
     top: 50px;
 }
 
+h3 {
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: 300px;
+  color: lightgray;
+}
+
 main {
     position: relative;
     width: 1250px;

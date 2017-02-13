@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //film functions
     film2.addEventListener("mouseover", function () {
       console.log("mouse over film");
-      tipTimer = setTimeout(showFilmTip, 1000);
+      tipTimer = setTimeout(showFilmTip, 2000);
     });
 
     function showFilmTip() {
@@ -43,16 +43,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       filmTip.style.opacity = 0;
     });
 
-    //film2.addEventListener("click", function () {
-      //console.log("film clicked");
-      //msg.style.display = "block";
-    //})
-
     //orange timer functions
 
     timer2.addEventListener("mouseover", function () {
       console.log("mouse over timer1");
-      var tipTimer = setTimeout(showTimerTip, 1000);
+      var tipTimer = setTimeout(showTimerTip, 2000);
     })
 
     function showTimerTip() {
@@ -88,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     timer.addEventListener("mouseover", function () {
       console.log("mouseover red timer");
-      var tipTimer = setTimeout(showTimerTip2, 1000);
+      var tipTimer = setTimeout(showTimerTip2, 2000);
     });
 
     function showTimerTip2() {
@@ -125,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     timer3.addEventListener("mouseover", function () {
       console.log("mouseover pink");
-      var tipTimer = setTimeout(showTimerTip3, 1000);
+      var tipTimer = setTimeout(showTimerTip3, 2000);
     });
 
     function showTimerTip3() {
@@ -162,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //blue timer functions
     timer4.addEventListener("mouseover", function () {
       console.log("mouseover blue");
-      var tipTimer = setTimeout(showTimerTip4, 1000);
+      var tipTimer = setTimeout(showTimerTip4, 2000);
     });
 
     function showTimerTip4() {
