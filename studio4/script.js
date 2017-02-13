@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var picture3 = document.getElementById("picture3");
     var picture4 = document.getElementById("picture4");
     var close = document.getElementById("close");
+    var aside = document.getElementById("aside");
 
     var tipTimer;
     var timerInterval;
@@ -198,6 +199,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     picture4.addEventListener("click", function () {
       final.style.opacity = 1;
       close.style.opacity = 1;
+      aside.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+      aside.style.height = "815px";
     })
 
     //close function
@@ -205,5 +208,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("clicked close");
       final.style.opacity = 0;
       close.style.opacity = 0;
+      aside.style.opacity = 0;
     })
 });

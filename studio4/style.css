@@ -204,16 +204,25 @@ div {
     top: 0px;
 }
 
+#aside {
+  position: relative;
+  display: block;
+  left: 105%;
+  width: 600px;
+  /*height: 500px;*/
+}
+
 #final {
   opacity: 0;
-  top: 300px;
-  left: 50%;
+  top: 100px;
+  left: 10%;
 }
 
 #close {
   font-size: 3em;
   position: relative;
   opacity: 0;
+  color: white;
 }
 
 .hidden {
