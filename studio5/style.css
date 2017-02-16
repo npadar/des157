@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+  margin:0;
+  padding:0; 
+}
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+}
