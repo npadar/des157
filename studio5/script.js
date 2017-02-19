@@ -28,9 +28,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var popup = new mapboxgl.Popup({ offset: [0, -15] })
     .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3>' + feature.properties.Species + '</h3><p>' + feature.properties.Status + '</p>')
+    .setHTML('<h3>' + feature.properties.Species + '</h3><p>' + feature.properties.Status + '</p>' +
+  feature.properties.image + '<img src="' + feature.properties.Image + '" alt="">')
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
   });
 
+  /*var geojson = [
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [ -104.62448, 45.703894]
+    },
+    properties: {
+      Species: "Black-footed Ferret",
+      Status: "EN",
+      Size: 8,
+      image: 'http://assets.worldwildlife.org/photos/393/images/story_full_width/WEB_202562.jpg?1345570463',
+    }
+  }
+  ];
+
+  myLayer.on('layeradd', function(e) {
+  var marker = e.layer,
+    feature = marker.feature;
+  marker.setIcon(L.icon(feature.properties.icon));
+  var content = '<h2>' + feature.properties.title + '</h2><img src="' + feature.properties.image + '" alt="">';
+  marker.bindPopup(content);
+  });
+
+  myLayer.setGeoJSON(geojson);
+  mapTooltipsJS.scrollWheelZoom.disable();*/
 });
