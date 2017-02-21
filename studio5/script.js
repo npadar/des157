@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       center: [4.899, 52.372]
   });
 
-  map = L.map("map").setView([4.899, 52.372]);
   /*var map = L.mapbox.map('map', 'mapbox.dark');
   map.legendControl.addLegend(document.getElementById('legend').innerHTML);
   */
 
+  //when use clicks on dots
   map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
     layers: ['conservation-status'] // replace this with the name of the layer
