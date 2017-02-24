@@ -77,6 +77,15 @@ ol {
     padding-left: 0;
 }
 
+#needfinding, #brainstorm, #feedback {
+  list-style-type: decimal;
+  padding-left: 50px;
+}
+
+#need img {
+  width: 145px;
+}
+
 li {
     text-align: left;
 }
