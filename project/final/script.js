@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // all other js here
   mapboxgl.accessToken = 'pk.eyJ1IjoibnBhZGFyIiwiYSI6ImNpejY1dmxmdTA1M28ycXF3NWxlNTBoMWQifQ._ksyjUDnYSaz47HApqK2LQ';
   var loader = document.getElementById('loader');
+  //var map = L.mapbox.map('map', 'mapbox.dark');
+  //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
   var bounds = [
     [-74.04728500751165, 40.68392799015035], // Southwest coordinates
@@ -18,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       zoom: 1.4,
       center: [4.899, 20.372]
   });
+
+  //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
 //CENTER MAP ON CLICK
   map.on('click', function (e) {
@@ -46,12 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   });
 
-//POPUP BOXES
-  //when use clicks on dots
-
-  /*var features3 = map.queryRenderedFeatures(e.point, {
-    layers: ['vu'] // replace this with the name of the layer
-  });*/
+//POPUP BOXES when user clicks on dots
 
   //FEATURE 1: CE
   map.on('click', function(e) {
@@ -109,6 +108,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .addTo(map);
       });
 
-
+      map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
 }); //end
