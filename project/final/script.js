@@ -50,6 +50,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   });
 
+  map.on('click', function (e) {
+    var features4 = map.queryRenderedFeatures(e.point, { layers: ['nt'] });
+    if (features4.length) {
+        map.flyTo({center: features4[0].geometry.coordinates});
+    }
+  });
+
+  map.on('click', function (e) {
+    var features5 = map.queryRenderedFeatures(e.point, { layers: ['lc'] });
+    if (features5.length) {
+        map.flyTo({center: features5[0].geometry.coordinates});
+    }
+  });
+
 //POPUP BOXES when user clicks on dots
 
   //FEATURE 1: CE
@@ -108,6 +122,44 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .addTo(map);
       });
 
-      map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+    //FEATURES 4:NT
+    map.on('click', function(e) {
+      var features4 = map.queryRenderedFeatures(e.point, {
+        layers: ['nt']
+      });
+      if (!features4.length) {
+        return;
+      }
+
+      var feature4 = features4[0];
+
+      var popup = new mapboxgl.Popup({ offset: [0, -15] })
+        .setLngLat(feature4.geometry.coordinates)
+        .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p>' + feature4.properties.Status + '</p><p>' +
+        feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="World Wildlife Fund">')
+        //.setLngLat(feature.geometry.coordinates)
+        .addTo(map);
+      });
+
+    //FEATURES 5: LC
+    map.on('click', function(e) {
+      var features5 = map.queryRenderedFeatures(e.point, {
+        layers: ['lc']
+      });
+      if (!features5.length) {
+        return;
+      }
+
+      var feature5 = features5[0];
+
+      var popup = new mapboxgl.Popup({ offset: [0, -15] })
+        .setLngLat(feature5.geometry.coordinates)
+        .setHTML('<h3 title="World Wildlife Fund">' + feature5.properties.Name + '</h3><p>' + feature5.properties.Status + '</p><p>' +
+        feature5.properties.Description + '</p><img src="' + feature5.properties.Image + '" alt="image" title="World Wildlife Fund">')
+        //.setLngLat(feature.geometry.coordinates)
+        .addTo(map);
+      });
+
+    map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
 }); //end
