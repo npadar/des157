@@ -160,6 +160,39 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .addTo(map);
       });
 
-    map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+    //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+
+    var toggleableLayerIds = [ 'ce', 'en', 'nt', 'vu', 'lc' ]; //all the layers
+    console.log(toggleableLayerIds);
+
+    for (var i = 0; i < toggleableLayerIds.length; i++) { //loop through all layers
+    var id = toggleableLayerIds[i];
+    console.log(id);
+
+    var link = document.createElement('a'); //creates an <a>
+    link.href = '#';
+    link.className = 'active';
+    link.textContent = id;
+
+    link.onclick = function (e) {
+        var clickedLayer = this.textContent;
+        console.log("clickedLayer");
+        e.preventDefault();
+        e.stopPropagation();
+
+        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+        if (visibility === 'visible') {
+            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+        }
+    };
+
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+  }
 
 }); //end
