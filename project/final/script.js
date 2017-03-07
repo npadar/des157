@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
-    var toggleableLayerIds = [ 'ce', 'en', 'nt', 'vu', 'lc' ]; //all the layers
+    var toggleableLayerIds = [ 'ce', 'en', 'vu', 'nt', 'lc' ]; //all the layers
     console.log(toggleableLayerIds);
 
     for (var i = 0; i < toggleableLayerIds.length; i++) { //loop through all layers
