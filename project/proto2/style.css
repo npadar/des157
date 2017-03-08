@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:300|Khula:300|Yantramanav:300');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yantramanav", "Helvetica";
+    background-color: gray;
+    width: 600px;
+    margin: auto;
+}
+
+#page {
+  width: 1200px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#dot {
+  position: absolute;
+  top: 200px;
+  left: 450px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.3em;
+    position: absolute;
+    top: 0px;
+    left: 55px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+    background-color: darkgray;
+    padding-left: 22px;
+    padding-right: 20px;
+}
+
+#active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 800px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.source {
+  font-size: 0.6em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: .9em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#exit {
+  z-index: 5;
+  color: black;
+  position: absolute;
+  font-size: 3em;
+  top: 50px;
+  left: 1200px;
+  color: white;
+}
+
+#image {
+  z-index: 2;
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  width: 500px;
+}
+
+#text {
+  position: absolute;
+  color: white;
+  width: 500px;
+  top: 90px;
+  left: 650px;
+  font-size: 1.2em;
+}

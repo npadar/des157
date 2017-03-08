@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
 //CENTER MAP ON CLICK
-  map.on('click', function (e) {
+/*  map.on('click', function (e) {
     // Use queryRenderedFeatures to get features at a click event's point
     // Use layer option to avoid getting results from other layers
     var features = map.queryRenderedFeatures(e.point, { layers: ['ce'] });
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         map.flyTo({center: features5[0].geometry.coordinates});
     }
   });
-
+*/
 //POPUP BOXES when user clicks on dots
 
   //FEATURE 1: CE
