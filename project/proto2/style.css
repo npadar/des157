@@ -3,11 +3,22 @@
     box-sizing: border-box;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+}
+
 body {
     font-family: "Yantramanav", "Helvetica";
-    background-color: gray;
+    background-color: #414042;
     width: 600px;
     margin: auto;
+}
+
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #page {
@@ -21,13 +32,78 @@ body {
 
 #dot {
   position: absolute;
-  top: 200px;
-  left: 450px;
+  top: 250px;
+  left: 400px;
+}
+
+.rect {
+  display: inline;
+}
+
+#legend {
+  position: absolute;
+  top: 550px;
+  left: 50px;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  color: white;
+  font-size: 0.7em;
+}
+
+.label2 {
+  position: absolute;
+  top: 10px;
+  left: 130px;
+  color: white;
+  font-size: 0.7em;
+}
+
+.label3 {
+  position: absolute;
+  top: 10px;
+  left: 220px;
+  color: white;
+  font-size: 0.7em;
+}
+
+.label4 {
+  position: absolute;
+  top: 10px;
+  left: 330px;
+  color: white;
+  font-size: 0.7em;
+}
+
+.label5 {
+  position: absolute;
+  top: 10px;
+  left: 430px;
+  color: white;
+  font-size: 0.7em;
+}
+
+.source {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  color: white;
+  font-size: 0.7em;
+}
+
+.title {
+  position: absolute;
+  top: 500px;
+  color: white;
+  left: 50px;
 }
 
 nav {
     text-align: center;
     margin-top: 50px;
+    width: 100%;
     font-size: 1.3em;
     position: absolute;
     top: 0px;

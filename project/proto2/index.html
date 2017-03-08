@@ -8,18 +8,68 @@
 </head>
 
 <body>
-  <div id="background">
-    <img src="http://www.outline-world-map.com/map-images-original/outline-blank-transparent-world-map-b1b.png" />
-    <form>
-      <button type="submit" id="dot"><a href="species.html">dot</a></button>
-    </form>
+  <h1> Vanishing </h1>
 
-    <!--<div id="page"></div>
-    <nav>
-      <a href="#" id="species"> Species </a>
-      <a href="#"> What caused the extinction </a>
-      <a href="#"> How to help </a>
-    </nav>-->
+  <div id="background">
+    <img src="http://www.clker.com/cliparts/0/d/3/2/12205452201820142176shokunin_World_Map.svg.hi.png" alt="image" id="map"/>
+
+    <a href="species.html" id="dot">
+      <svg height="100" width="100">
+        <circle cx="10" cy="10" r="10" fill="red"/>
+      </svg>
+    </a>
+
+    <p class="title">
+      Conservation Status
+    </p>
+
+    <section id="legend">
+      <svg width="100" height="20">
+        <rect width="100" height="20" style="fill:red" class="rect"/>
+      </svg>
+
+      <p class="label">
+        Critically Endangered
+      </p>
+
+      <svg width="100" height="20">
+        <rect width="100" height="20" style="fill:orange" class="rect"/>
+      </svg>
+
+      <p class="label2">
+        Endangered
+      </p>
+
+      <svg width="100" height="20">
+        <rect width="100" height="20" style="fill:yellow" class="rect"/>
+      </svg>
+
+      <p class="label3">
+        Near Threatened
+      </p>
+
+      <svg width="100" height="20">
+        <rect width="100" height="20" style="fill:green" class="rect"/>
+      </svg>
+
+      <p class="label4">
+        Vulnerable
+      </p>
+
+      <svg width="100" height="20">
+        <rect width="100" height="20" style="fill:blue" class="rect"/>
+      </svg>
+
+      <p class="label5">
+        Least Concern
+      </p>
+
+      <a href="https://www.wwf.org" class="source">
+        Source: World Wildlife Fund
+      </a>
+
+    </section>
+
   </div>
 
 </body>
