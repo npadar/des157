@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // all other js here
   mapboxgl.accessToken = 'pk.eyJ1IjoibnBhZGFyIiwiYSI6ImNpejY1dmxmdTA1M28ycXF3NWxlNTBoMWQifQ._ksyjUDnYSaz47HApqK2LQ';
   var loader = document.getElementById('loader');
-  //var map = L.mapbox.map('map', 'mapbox.dark');
-  //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
   var bounds = [
     [-74.04728500751165, 40.68392799015035], // Southwest coordinates
@@ -21,49 +19,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       center: [4.899, 20.372]
   });
 
-  //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
-
-//CENTER MAP ON CLICK
-/*  map.on('click', function (e) {
-    // Use queryRenderedFeatures to get features at a click event's point
-    // Use layer option to avoid getting results from other layers
-    var features = map.queryRenderedFeatures(e.point, { layers: ['ce'] });
-    // if there are features within the given radius of the click event,
-    // fly to the location of the click event
-    if (features.length) {
-        // Get coordinates from the symbol and center the map on those coordinates
-        map.flyTo({center: features[0].geometry.coordinates});
-    }
-  });
-
-  map.on('click', function (e) {
-    var features2 = map.queryRenderedFeatures(e.point, { layers: ['en'] });
-    if (features2.length) {
-        map.flyTo({center: features2[0].geometry.coordinates});
-    }
-  });
-
-  map.on('click', function (e) {
-    var features3 = map.queryRenderedFeatures(e.point, { layers: ['vu'] });
-    if (features3.length) {
-        map.flyTo({center: features3[0].geometry.coordinates});
-    }
-  });
-
-  map.on('click', function (e) {
-    var features4 = map.queryRenderedFeatures(e.point, { layers: ['nt'] });
-    if (features4.length) {
-        map.flyTo({center: features4[0].geometry.coordinates});
-    }
-  });
-
-  map.on('click', function (e) {
-    var features5 = map.queryRenderedFeatures(e.point, { layers: ['lc'] });
-    if (features5.length) {
-        map.flyTo({center: features5[0].geometry.coordinates});
-    }
-  });
-*/
 //POPUP BOXES when user clicks on dots
 
   //FEATURE 1: CE
@@ -80,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     .setLngLat(feature.geometry.coordinates)
     .setHTML('<h3 title="World Wildlife Fund">' + feature.properties.Name + '</h3><p>' + feature.properties.Status + '</p><p>' +
     feature.properties.Description + '</p><img src="' + feature.properties.Image + '" alt="image" title="World Wildlife Fund">')
-    //.setLngLat(feature.geometry.coordinates)
     .addTo(map);
   });
 
@@ -99,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       .setLngLat(feature2.geometry.coordinates)
       .setHTML('<h3 title="World Wildlife Fund">' + feature2.properties.Name + '</h3><p>' + feature2.properties.Status + '</p><p>' +
       feature2.properties.Description + '</p><img src="' + feature2.properties.Image + '" alt="image" title="World Wildlife Fund">')
-      //.setLngLat(feature.geometry.coordinates)
       .addTo(map);
     });
 
@@ -118,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .setLngLat(feature3.geometry.coordinates)
         .setHTML('<h3 title="World Wildlife Fund">' + feature3.properties.Name + '</h3><p>' + feature3.properties.Status + '</p><p>' +
         feature3.properties.Description + '</p><img src="' + feature3.properties.Image + '" alt="image" title="World Wildlife Fund">')
-        //.setLngLat(feature.geometry.coordinates)
         .addTo(map);
       });
 
@@ -137,11 +89,44 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .setLngLat(feature4.geometry.coordinates)
         .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p>' + feature4.properties.Status + '</p><p>' +
         feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="World Wildlife Fund">')
-        //.setLngLat(feature.geometry.coordinates)
         .addTo(map);
       });
 
     //FEATURES 5: LC
+    var info = document.getElementById('info');
+
+    var content = '<div class="tabs">' +
+          '<div class="tab" id="tab-1">' +
+          '<div class="content">' +
+          '<b>Tab 1 content</b>' +
+          '</div>' +
+          '</div>' +
+
+          '<div class="tab" id="tab-2">' +
+          '<div class="content">' +
+          '<b>Tab 2 content</b>' +
+          '</div>' +
+          '</div>' +
+
+          '<div class="tab" id="tab-3">' +
+          '<div class="content">' +
+          '<b>Tab 3 content</b>' +
+          '</div>' +
+          '</div>' +
+
+          '<ul class="tabs-link">' +
+          '<li class="tab-link"> <a href="#tab-1"><span>Tab 1</span></a></li>' +
+          '<li class="tab-link"> <a href="#tab-2"><span>Tab 2</span></a></li>' +
+          '<li class="tab-link"> <a href="#tab-3"><span>Tab 3</span></a></li>' +
+          '</ul>' +
+      '</div>';
+
+      var polygon1 = L.circle([51.508, -0.11], 500, {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+      }).addTo(map).bindPopup(content);
+
     map.on('click', function(e) {
       var features5 = map.queryRenderedFeatures(e.point, {
         layers: ['lc']
@@ -156,13 +141,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .setLngLat(feature5.geometry.coordinates)
         .setHTML('<h3 title="World Wildlife Fund">' + feature5.properties.Name + '</h3><p>' + feature5.properties.Status + '</p><p>' +
         feature5.properties.Description + '</p><img src="' + feature5.properties.Image + '" alt="image" title="World Wildlife Fund">')
-        //.setLngLat(feature.geometry.coordinates)
         .addTo(map);
       });
 
+      //myLayer.eachLayer(function (marker) {
+      //  var p = marker.feature.properties;
+      //}
     //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
-    var toggleableLayerIds = [ 'ce', 'en', 'vu', 'nt', 'lc' ]; //all the layers
+    /*var toggleableLayerIds = [ 'ce', 'en', 'vu', 'nt', 'lc' ]; //all the layers
     console.log(toggleableLayerIds);
 
     for (var i = 0; i < toggleableLayerIds.length; i++) { //loop through all layers
@@ -193,6 +180,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var layers = document.getElementById('menu');
     layers.appendChild(link);
-  }
+  }*/
 
 }); //end
