@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Codystar|Monoton|Permanent+Marker|Rock+Salt');
+
+/* CSS Document */
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: "Helvetica";
+}
+
+h1 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  font-family: "Codystar";
+  margin-top: 20px;
+  color: white;
+  left: 40%;
+  font-size: 3em;
+}
+
+#map {
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  width:100%;
+  height: 100%;
+}
+
+img {
+  width: 80%;
+}
+
+p {
+  width: 80%;
+}
+
+.mapboxgl-popup {
+  width: 50%;
+}
+
+footer {
+  position: absolute;
+  top: 600px;
+  font-family: "Arial";
+  font-size: 0.8em;
+  left: 40%;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.legend label,
+.legend span {
+  display:block;
+  float:left;
+  height:15px;
+  width:20%;
+  text-align:center;
+  font-size:9px;
+  color:white;
+  }
+
+/*nav span:hover {
+  opacity: .75;
+}*/
+
+#menu {
+     background: #fff;
+     position: absolute;
+     z-index: 1;
+     top: 10px;
+     right: 10px;
+     border-radius: 3px;
+     width: 120px;
+     border: 1px solid rgba(0,0,0,0.4);
+     font-family: 'Helvetica', sans-serif;
+ }
+
+ #menu a {
+     font-size: 13px;
+     color: #404040;
+     display: block;
+     margin: 0;
+     padding: 0;
+     padding: 10px;
+     text-decoration: none;
+     border-bottom: 1px solid rgba(0,0,0,0.25);
+     text-align: center;
+     text-transform: uppercase;
+ }
+
+ #menu a:last-child {
+     border: none;
+ }
+
+ #menu a:hover {
+     background-color: #f8f8f8;
+     color: #404040;
+ }
+
+#menu a.active {
+  background-color: #3887be;
+  color: #ffffff;
+}
+
+#menu a.active:hover {
+  background: #3074a4;
+}
+
+#legend a {
+  color: white;
+  text-decoration: none;
+}
+
+#legend a:hover {
+  text-decoration: underline;
+}
+
+#legend {
+  color: white;
+  position: absolute;
+  top: 550px;
+}
+
+#ce {
+  background-color: rgb(214, 81, 81);
+}
+
+#en {
+  background-color: rgb(208, 135, 57);
+}
+
+#nt {
+  background-color: rgb(235, 222, 107);
+}
+
+#vu {
+  background-color: rgb(173, 224, 97);
+}
+
+#lc {
+  background-color: rgb(130, 138, 242);
+}
