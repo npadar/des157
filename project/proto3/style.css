@@ -34,34 +34,20 @@ h1 {
   height: 100%;
 }
 
-img {
-  width: 80%;
-}
-
-p {
-  width: 80%;
-}
-
 .mapboxgl-popup {
   width: 50%;
 }
 
-footer {
-  position: absolute;
-  top: 600px;
-  font-family: "Arial";
-  font-size: 0.8em;
-  left: 40%;
-  padding: 10px;
+img {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-footer a:hover {
-  text-decoration: underline;
+p {
+  width: 100%;
+  text-align: left;
 }
 
 .legend label,
@@ -74,10 +60,6 @@ footer a:hover {
   font-size:9px;
   color:white;
   }
-
-/*nav span:hover {
-  opacity: .75;
-}*/
 
 #menu {
      background: #fff;
