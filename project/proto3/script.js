@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature.properties.Name + '</h3><p>' + feature.properties.Status + '</p><p>' +
-                feature.properties.Description + '</p><img src="' + feature.properties.Image + '" alt="image" title="World Wildlife Fund">')
+                feature.properties.Description + '</p><img src="' + feature.properties.Image + '" alt="image" title="World Wildlife Fund">' +
+                '<p>' + feature.properties.Threats + '</p><p>' + feature.properties.Help + '</p>')
             .addTo(map);
     });
 
