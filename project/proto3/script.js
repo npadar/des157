@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // all other js here
     mapboxgl.accessToken = 'pk.eyJ1IjoibnBhZGFyIiwiYSI6ImNpejY1dmxmdTA1M28ycXF3NWxlNTBoMWQifQ._ksyjUDnYSaz47HApqK2LQ';
     var loader = document.getElementById('loader');
+    var title = document.getElementById('title');
+    var ce = document.getElementById('ce');
+    var en = document.getElementById('en');
+    var nt = document.getElementById('nt');
+    var vu = document.getElementById('vu');
+    var lc = document.getElementById('lc');
 
     var bounds = [
         [-74.04728500751165, 40.68392799015035], // Southwest coordinates
@@ -23,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     //FEATURE 1: CE
     map.on('click', function(e) {
+        //title.style.opacity = 0;
+
         var features = map.queryRenderedFeatures(e.point, {
             layers: ['ce'] // replace this with the name of the layer
         });
@@ -35,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 offset: [0, -15]
             })
             .setLngLat(feature.geometry.coordinates)
-            .setHTML('<h3 title="World Wildlife Fund">' + feature.properties.Name + '</h3><p>' + feature.properties.Status + '</p><p>' +
+            .setHTML('<h3 title="World Wildlife Fund">' + feature.properties.Name + '</h3><p class="status">' + feature.properties.Status + '</p><p>' +
                 feature.properties.Description + '</p><img src="' + feature.properties.Image + '" alt="image" title="World Wildlife Fund">' +
                 '<p>' + feature.properties.Threats + '</p><p>' + feature.properties.Help + '</p>')
             .addTo(map);
@@ -56,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 offset: [0, -15]
             })
             .setLngLat(feature2.geometry.coordinates)
-            .setHTML('<h3 title="World Wildlife Fund">' + feature2.properties.Name + '</h3><p>' + feature2.properties.Status + '</p><p>' +
+            .setHTML('<h3 title="World Wildlife Fund">' + feature2.properties.Name + '</h3><p class="status">' + feature2.properties.Status + '</p><p>' +
                 feature2.properties.Description + '</p><img src="' + feature2.properties.Image + '" alt="image" title="World Wildlife Fund">')
             .addTo(map);
     });
@@ -76,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 offset: [0, -15]
             })
             .setLngLat(feature3.geometry.coordinates)
-            .setHTML('<h3 title="World Wildlife Fund">' + feature3.properties.Name + '</h3><p>' + feature3.properties.Status + '</p><p>' +
+            .setHTML('<h3 title="World Wildlife Fund">' + feature3.properties.Name + '</h3><p class="status">' + feature3.properties.Status + '</p><p>' +
                 feature3.properties.Description + '</p><img src="' + feature3.properties.Image + '" alt="image" title="World Wildlife Fund">')
             .addTo(map);
     });
@@ -96,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 offset: [0, -15]
             })
             .setLngLat(feature4.geometry.coordinates)
-            .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p>' + feature4.properties.Status + '</p><p>' +
+            .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p class="status">' + feature4.properties.Status + '</p><p>' +
                 feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="World Wildlife Fund">')
             .addTo(map);
     });
@@ -116,47 +124,84 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 offset: [0, -15]
             })
             .setLngLat(feature5.geometry.coordinates)
-            .setHTML('<h3 title="World Wildlife Fund">' + feature5.properties.Name + '</h3><p>' + feature5.properties.Status + '</p><p>' +
+            .setHTML('<h3 title="World Wildlife Fund">' + feature5.properties.Name + '</h3><p class="status">' + feature5.properties.Status + '</p><p>' +
                 feature5.properties.Description + '</p><img src="' + feature5.properties.Image + '" alt="image" title="World Wildlife Fund">')
             .addTo(map);
     });
 
-    //myLayer.eachLayer(function (marker) {
-    //  var p = marker.feature.properties;
-    //}
-    //map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+    //CE layer toggle
+    ce.addEventListener("click", function() {
+        console.log("clicked");
 
-    /*var toggleableLayerIds = [ 'ce', 'en', 'vu', 'nt', 'lc' ]; //all the layers
-    console.log(toggleableLayerIds);
-
-    for (var i = 0; i < toggleableLayerIds.length; i++) { //loop through all layers
-    var id = toggleableLayerIds[i];
-    console.log(id);
-
-    var link = document.createElement('a'); //creates an <a>
-    link.href = '#';
-    link.className = 'active';
-    link.textContent = id;
-
-    link.onclick = function (e) {
-        var clickedLayer = this.textContent;
-        console.log("clickedLayer");
-        e.preventDefault();
-        e.stopPropagation();
-
-        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-
+        var visibility = map.getLayoutProperty('ce', 'visibility');
+        console.log("here");
         if (visibility === 'visible') {
-            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            map.setLayoutProperty('ce', 'visibility', 'none');
             this.className = '';
         } else {
             this.className = 'active';
-            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+            map.setLayoutProperty('ce', 'visibility', 'visible');
         }
-    };
+    });
 
-    var layers = document.getElementById('menu');
-    layers.appendChild(link);
-  }*/
+    //EN layer toggle
+    en.addEventListener("click", function() {
+        console.log("clicked");
+
+        var visibility = map.getLayoutProperty('en', 'visibility');
+        console.log("here");
+        if (visibility === 'visible') {
+            map.setLayoutProperty('en', 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty('en', 'visibility', 'visible');
+        }
+    });
+
+    //VU layer toggle
+    vu.addEventListener("click", function() {
+        console.log("clicked");
+
+        var visibility = map.getLayoutProperty('vu', 'visibility');
+        console.log("here");
+        if (visibility === 'visible') {
+            map.setLayoutProperty('vu', 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty('vu', 'visibility', 'visible');
+        }
+    });
+
+    //NT layer toggle
+    nt.addEventListener("click", function() {
+        console.log("clicked");
+
+        var visibility = map.getLayoutProperty('nt', 'visibility');
+        console.log("here");
+        if (visibility === 'visible') {
+            map.setLayoutProperty('nt', 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty('nt', 'visibility', 'visible');
+        }
+    });
+
+    //LC layer toggle
+    lc.addEventListener("click", function() {
+        console.log("clicked");
+
+        var visibility = map.getLayoutProperty('lc', 'visibility');
+        console.log("here");
+        if (visibility === 'visible') {
+            map.setLayoutProperty('lc', 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty('lc', 'visibility', 'visible');
+        }
+    });
 
 }); //end

@@ -26,6 +26,15 @@ h1 {
   font-size: 3em;
 }
 
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.status {
+  text-align: center;
+}
+
 #map {
   position:absolute;
   top:0px;
@@ -36,6 +45,25 @@ h1 {
 
 .mapboxgl-popup {
   width: 50%;
+  color: gray;
+  height: 350px;
+  }
+
+.mapboxgl-popup-content {
+  overflow: auto;
+}
+
+.mapboxgl-popup-content-wrapper {
+  background-color: black;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: black;
+}
+
+.leaflet-popup-content {
+  height : 150px;
+  overflow : auto;
 }
 
 img {
@@ -61,47 +89,8 @@ p {
   color:white;
   }
 
-#menu {
-     background: #fff;
-     position: absolute;
-     z-index: 1;
-     top: 10px;
-     right: 10px;
-     border-radius: 3px;
-     width: 120px;
-     border: 1px solid rgba(0,0,0,0.4);
-     font-family: 'Helvetica', sans-serif;
- }
-
- #menu a {
-     font-size: 13px;
-     color: #404040;
-     display: block;
-     margin: 0;
-     padding: 0;
-     padding: 10px;
-     text-decoration: none;
-     border-bottom: 1px solid rgba(0,0,0,0.25);
-     text-align: center;
-     text-transform: uppercase;
- }
-
- #menu a:last-child {
-     border: none;
- }
-
- #menu a:hover {
-     background-color: #f8f8f8;
-     color: #404040;
- }
-
-#menu a.active {
-  background-color: #3887be;
-  color: #ffffff;
-}
-
-#menu a.active:hover {
-  background: #3074a4;
+#menu span:hover {
+  opacity: 0.7;
 }
 
 #legend a {
@@ -128,84 +117,13 @@ p {
 }
 
 #nt {
-  background-color: rgb(235, 222, 107);
+  background-color: rgb(173, 224, 97);
 }
 
 #vu {
-  background-color: rgb(173, 224, 97);
+  background-color: rgb(235, 222, 107);
 }
 
 #lc {
   background-color: rgb(130, 138, 242);
-}
-
-.info {
-  background:#fff;
-  position:absolute;
-  width:260px;
-  top:10px;
-  right:10px;
-  border-radius:2px;
-  }
-  .info .item {
-    display:block;
-    border-bottom:1px solid #eee;
-    padding:10px;
-    text-decoration:none;
-    }
-    .info .item small { color:#888; }
-    .info .item:hover,
-    .info .item.active { background:#f8f8f8; }
-    .info .item:last-child { border-bottom:none; }
-
-.leaflet-popup-content {
-width:240px;
-}
-
-.tabs {
-  position:relative;
-  min-height:200px;
-  clear:both;
-  margin:25px 0;
-}
-.tab {
-  float:left;
-  display: none;
-}
-.tab:first-of-type {
-  display: inline-block;
-}
-.tabs-link {
-  position: relative;
-  top: -14px;
-  height: 20px;
-  left: -40px;
-}
-.tab-link {
-  background:#eee;
-  display: inline-block;
-  padding:10px;
-  border:1px solid #ccc;
-  margin-left:-1px;
-  position:relative;
-  list-style-type: none;
-  left:1px;
-  top:1px;
-  cursor:pointer;
-}
-.tab-link {
-  background:#f8f8f8;
-}
-.content {
-  background:white;
-  position:absolute;
-  top:28px;
-  left:0;
-  right:0;
-  bottom:0;
-  padding:20px;
-  border:1px solid #ccc;
-}
-.tab:target {
-  display: block;
 }
