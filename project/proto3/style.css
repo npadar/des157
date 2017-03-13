@@ -127,3 +127,7 @@ p {
 #lc {
   background-color: rgb(130, 138, 242);
 }
+
+footer {
+  position: absolute;
+}
