@@ -14,16 +14,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var lc = document.getElementById('lc');
 
     var bounds = [
-        [-74.04728500751165, 40.68392799015035], // Southwest coordinates
-        [-73.91058699000139, 40.87764500765852] // Northeast coordinates
+        [-165.959,66.503], // Southwest coordinates
+        [167.998,65.866] // Northeast coordinates
     ];
 
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/npadar/ciz92kc6i001n2ss2tfsqtz36',
         zoom: 0.9,
-        center: [4.899, 20.372]
+        center: [4.899, 20.372],
+        //maxBounds: bounds
     });
+
+    //map.dragging.disable();
+
+    map.addControl(new mapboxgl.NavigationControl());
 
     //POPUP BOXES when user clicks on dots
 
