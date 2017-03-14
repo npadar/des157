@@ -61,6 +61,10 @@ img {
   margin-bottom: 5px;
 }
 
+.test {
+  width: 290px;
+}
+
 a {
     text-decoration: none;
     color: black;
