@@ -39,7 +39,7 @@ h1 {
   left: 40%;
   font-size: 3em;
   animation: fade;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-fill-mode: forwards;
 }
 
@@ -57,6 +57,7 @@ h2 {
 
 .status {
   text-align: center;
+  font-size: 1.2em;
 }
 
 #map {
