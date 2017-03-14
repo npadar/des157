@@ -26,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //maxBounds: bounds
     });
 
-    //map.dragging.disable();
-
+    //add zoom
     map.addControl(new mapboxgl.NavigationControl());
 
     //POPUP BOXES when user clicks on dots
@@ -50,8 +49,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             .setLngLat(feature.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature.properties.Name + '</h3><p class="status">' + feature.properties.Status + '</p><p>' +
                 feature.properties.Description + '</p><img src="' + feature.properties.Image + '" alt="image" title="World Wildlife Fund">' +
-                '<p>' + feature.properties.Threats + '</p><p>' + feature.properties.Help + '</p>')
+                '<h2> Threats </h2>' +
+                '<p>' + feature.properties.Threats + '</p><h2> How to Help </h2><p>' + feature.properties.Help + '</p>')
             .addTo(map);
+
     });
 
     //FEATURES 2: EN
@@ -70,7 +71,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature2.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature2.properties.Name + '</h3><p class="status">' + feature2.properties.Status + '</p><p>' +
-                feature2.properties.Description + '</p><img src="' + feature2.properties.Image + '" alt="image" title="World Wildlife Fund">')
+                feature2.properties.Description + '</p><img src="' + feature2.properties.Image + '" alt="image" title="World Wildlife Fund">'
+                + '<h2> Threats </h2><p>' + feature2.properties.Threats + '</p><h2> How to Help </h2><p>' + feature2.properties.Help + '</p>')
             .addTo(map);
     });
 
@@ -90,7 +92,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature3.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature3.properties.Name + '</h3><p class="status">' + feature3.properties.Status + '</p><p>' +
-                feature3.properties.Description + '</p><img src="' + feature3.properties.Image + '" alt="image" title="World Wildlife Fund">')
+                feature3.properties.Description + '</p><img src="' + feature3.properties.Image + '" alt="image" title="World Wildlife Fund">' +
+                '<h2> Threats </h2><p>' + feature3.properties.Threats + '</p><h2> How to Help </h2><p>' + feature3.properties.Help + '</p>')
             .addTo(map);
     });
 
@@ -110,7 +113,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature4.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p class="status">' + feature4.properties.Status + '</p><p>' +
-                feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="World Wildlife Fund">')
+                feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="World Wildlife Fund">'
+                + '<h2> Threats </h2><p>' + feature4.properties.Threats + '</p><h2> How to Help </h2><p>' + feature4.properties.Help + '</p>')
             .addTo(map);
     });
 
@@ -130,7 +134,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature5.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature5.properties.Name + '</h3><p class="status">' + feature5.properties.Status + '</p><p>' +
-                feature5.properties.Description + '</p><img src="' + feature5.properties.Image + '" alt="image" title="World Wildlife Fund">')
+                feature5.properties.Description + '</p><img src="' + feature5.properties.Image + '" alt="image" title="World Wildlife Fund">'
+                + '<h2> Threats </h2><p>' + feature5.properties.Threats + '</p><h2> How to Help </h2><p>' + feature5.properties.Help + '</p>')
             .addTo(map);
     });
 

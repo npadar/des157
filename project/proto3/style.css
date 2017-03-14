@@ -29,6 +29,13 @@ h1 {
 h3 {
   text-align: center;
   text-transform: uppercase;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-left: 25px;
 }
 
 .status {
@@ -53,29 +60,17 @@ h3 {
   overflow: auto;
 }
 
-.mapboxgl-popup-content-wrapper {
-  background-color: black;
-}
-
-.leaflet-popup-content-wrapper {
-  background-color: black;
-}
-
-.leaflet-popup-content {
-  height : 150px;
-  overflow : auto;
-}
-
 img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 70%;
+  float: left;
+  padding: 25px;
 }
 
 p {
-  width: 100%;
+  width: 90%;
   text-align: left;
+  margin: auto;
+  padding: 15px;
 }
 
 .legend label,
