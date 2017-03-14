@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/npadar/ciz92kc6i001n2ss2tfsqtz36',
-        zoom: 0.9,
+        zoom: 0.85,
         center: [4.899, 20.372],
         //maxBounds: bounds
     });
@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var feature = features[0];
 
         var popup = new mapboxgl.Popup({
-                offset: [0, -15]
+                offset: [0, -15],
+                anchor: 'bottom'
             })
             .setLngLat(feature.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature.properties.Name + '</h3><p class="status">' + feature.properties.Status + '</p><p>' +
@@ -67,7 +68,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var feature2 = features2[0];
 
         var popup = new mapboxgl.Popup({
-                offset: [0, -15]
+                offset: [0, -15],
+                anchor: 'right'
             })
             .setLngLat(feature2.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature2.properties.Name + '</h3><p class="status">' + feature2.properties.Status + '</p><p>' +
@@ -88,7 +90,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var feature3 = features3[0];
 
         var popup = new mapboxgl.Popup({
-                offset: [0, -15]
+                offset: [0, -15],
+                anchor: 'bottom'
             })
             .setLngLat(feature3.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature3.properties.Name + '</h3><p class="status">' + feature3.properties.Status + '</p><p>' +

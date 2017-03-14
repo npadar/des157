@@ -60,6 +60,11 @@ h2 {
   font-size: 1.2em;
 }
 
+.mapboxgl-popup-anchor-bottom-right {
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
 #map {
   position:absolute;
   top:0px;
@@ -71,7 +76,7 @@ h2 {
 .mapboxgl-popup {
   width: 50%;
   color: gray;
-  height: 350px;
+  height: 270px;
   }
 
 .mapboxgl-popup-content {
