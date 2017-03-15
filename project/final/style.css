@@ -167,6 +167,11 @@ p {
   top: 90%;
 }
 
+.mapboxgl-popup-close-button {
+  width: 60px;
+  height: 30px;
+}
+
 .tip1 {
   position: absolute;
   color: white;

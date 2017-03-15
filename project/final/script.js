@@ -117,9 +117,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 offset: [0, -15]
             })
             .setLngLat(feature4.geometry.coordinates)
-            .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p class="status" style="background-color:rgb(173, 224, 97);color:white;>' + feature4.properties.Status + '</p><p>' +
-                feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="@World Wildlife Fund">'
-                + '<h2> Threats </h2><p>' + feature4.properties.Threats + '</p><h2> How to Help </h2><p>' + feature4.properties.Help + '<a href="' + feature4.properties.Link + '">defenders.org</a></p>')
+            .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p class="status" style="background-color:rgb(173, 224, 97); color:white;">' + feature4.properties.Status + '</p><p>' +
+                feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="@World Wildlife Fund">' +
+                '<h2> Threats </h2><p>' + feature4.properties.Threats + '</p><h2> How to Help </h2><p>' + feature4.properties.Help + '<a href="' + feature4.properties.Link + '">defenders.org</a></p>')
             .addTo(map);
     });
 
