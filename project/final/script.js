@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature.properties.Name + '</h3><p class="status" style="background-color:rgb(214, 81, 81);color:white">' + feature.properties.Status + '</p><p>' +
-                feature.properties.Description + '</p><img src="' + feature.properties.Image + '" alt="image" title="World Wildlife Fund">' +
+                feature.properties.Description + '</p><img src="' + feature.properties.Image + '" alt="image" title="@World Wildlife Fund">' +
                 '<h2> Threats </h2>' +
                 '<p>' + feature.properties.Threats + '</p><h2> How to Help </h2><p>' + feature.properties.Help + '<a href="' + feature.properties.Link + '">WWF</a></p>')
             .addTo(map);
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature2.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature2.properties.Name + '</h3><p class="status" style="background-color:rgb(208, 135, 57); color:white;">' + feature2.properties.Status + '</p><p>' +
-                feature2.properties.Description + '</p><img src="' + feature2.properties.Image + '" alt="image" title="World Wildlife Fund">'
+                feature2.properties.Description + '</p><img src="' + feature2.properties.Image + '" alt="image" title="@World Wildlife Fund">'
                 + '<h2> Threats </h2><p>' + feature2.properties.Threats + '</p><h2> How to Help </h2><p>' + feature2.properties.Help + '<a href="' + feature2.properties.Link + '">WWF</a></p>')
             .addTo(map);
     });
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature3.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature3.properties.Name + '</h3><p class="status" style="background-color:rgb(235, 222, 107); color:white;">' + feature3.properties.Status + '</p><p>' +
-                feature3.properties.Description + '</p><img src="' + feature3.properties.Image + '" alt="image" title="World Wildlife Fund">' +
+                feature3.properties.Description + '</p><img src="' + feature3.properties.Image + '" alt="image" title="@World Wildlife Fund">' +
                 '<h2> Threats </h2><p>' + feature3.properties.Threats + '</p><h2> How to Help </h2><p>' + feature3.properties.Help + '<a href="' + feature3.properties.Link + '">WWF</a></p>')
             .addTo(map);
     });
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             })
             .setLngLat(feature4.geometry.coordinates)
             .setHTML('<h3 title="World Wildlife Fund">' + feature4.properties.Name + '</h3><p class="status" style="background-color:rgb(173, 224, 97);color:white;>' + feature4.properties.Status + '</p><p>' +
-                feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="World Wildlife Fund">'
+                feature4.properties.Description + '</p><img src="' + feature4.properties.Image + '" alt="image" title="@World Wildlife Fund">'
                 + '<h2> Threats </h2><p>' + feature4.properties.Threats + '</p><h2> How to Help </h2><p>' + feature4.properties.Help + '<a href="' + feature4.properties.Link + '">defenders.org</a></p>')
             .addTo(map);
     });

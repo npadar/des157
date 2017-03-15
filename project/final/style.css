@@ -121,6 +121,15 @@ img {
   padding: 25px;
 }
 
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 p {
   width: 90%;
   text-align: left;
@@ -191,48 +200,3 @@ p {
 #lc {
   background-color: rgb(130, 138, 242);
 }
-
-.map .tabs-ui {
-  position:relative;
-  min-height:200px;
-  width:240px;
-  clear:both;
-  margin:25px 0;
-  }
-.map .tab {
-  float:left;
-  }
-.map .tab label {
-  background:#eee;
-  padding:10px;
-  border:1px solid #ccc;
-  margin-left:-1px;
-  position:relative;
-  left:1px;
-  top:1px;
-  cursor:pointer;
-  }
-.map .tab label:hover {
-  background:#f8f8f8;
-  }
-.map .tab [type=radio] {
-  display:none;
-  }
-.map .tab .content {
-  background:white;
-  position:absolute;
-  top:28px;
-  left:0;
-  right:0;
-  bottom:0;
-  padding:10px;
-  border:1px solid #ccc;
-  }
-.map .tab [type=radio]:checked ~ label {
-  background:white;
-  border-bottom:1px solid white;
-  z-index:2;
-  }
-.map .tab [type=radio]:checked ~ label ~ .content {
-  z-index:1;
-  }
