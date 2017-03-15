@@ -5,34 +5,54 @@
     <meta charset="UTF-8">
     <title> Final </title>
     <meta name='viewport' content='initial-scale=1,user-scalable=yes' />
+    <link href="style.css" rel="stylesheet"/>
+    <!-- link to mapbox javascript library -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- link to mapbox javascript library -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-    <link href="style.css" rel="stylesheet"/>
     <script src='script.js' type="text/javascript"></script>
+    <!-- link to please wait library
+    <link href="assets/css/please-wait.css" rel="stylesheet">
+    <link href="assets/css/default.css" rel="stylesheet"> -->
+
 </head>
 
 <body>
-  <h1> Vanishing </h1>
-
-  <div id="mapid" class="map"></div>
-  <div id='info' class='info'></div>
+  <h1 id="title"> Vanishing </h1>
+  <h2 id="quote"> Count them while you can </h2>
+  <div id="map" class="map"></div>
+  <div class="tab">
+    <button class="tablinks"></button>
+  </div>
 
   <div id='legend'>
     <strong>Conservation Status</strong>
-    <nav class='legend clearfix'>
+    <nav class='legend clearfix' id="menu">
       <span id="ce"></span>
       <span id="en"></span>
-      <span id="nt"></span>
       <span id="vu"></span>
+      <span id="nt"></span>
       <span id="lc"></span>
       <label>CE: Critically Endangered</label>
       <label>EN: Endangered</label>
       <label>VU: Vulnerable</label>
       <label>NT: Near Threatened</label>
       <label>LC: Least Concern</label>
-      <small>Source: <a href="http://www.wwf.org">World Wildlife Fund</a></small>
+      <small>Source: <a href="http://www.wwf.org" target="_blank"> &copy; World Wildlife Fund</a></small>
     </nav>
   </div>
+
+  <span class="tip1"> Click on the legend to hide layers! </span>
+  <span class="tip2"> Right click and drag to rotate the map </span>
+
+  <!--<footer>
+      <a href="https://github.com/npadar/des157"> Github</a> |
+      <a href="mailto:njpadar@ucdavis.edu "> Email</a> |
+      <a href="https://validator.w3.org/check?uri=referer "> Valid HTML 5</a> |
+      <a href="https://jigsaw.w3.org/css-validator/check/referer "> Valid CSS</a>
+  </footer>-->
 
 </body>
 

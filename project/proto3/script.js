@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         style: 'mapbox://styles/npadar/ciz92kc6i001n2ss2tfsqtz36',
         zoom: 0.85,
         center: [4.899, 20.372],
+        //continuousWorld: false;
         //maxBounds: bounds
     });
 
