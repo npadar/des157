@@ -39,7 +39,7 @@ h1 {
   color: white;
   font-size: 3em;
   animation: fade;
-  animation-duration: 10s;
+  animation-duration: 7s;
   animation-fill-mode: forwards;
   background-color: black;
   height: 100%;
@@ -59,9 +59,10 @@ h1 {
   align-items: center;
   justify-content: center;
   animation: fade;
-  animation-duration: 8s;
+  animation-duration: 7s;
   animation-fill-mode: forwards;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
+  text-transform: none;
 }
 
 h3 {
@@ -79,7 +80,10 @@ h2 {
 
 .status {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .mapboxgl-popup-anchor-bottom-right {
@@ -108,10 +112,11 @@ h2 {
 .mapboxgl-popup-content {
   overflow: auto;
   font-size: 1.3em;
+  background-color: #000;
 }
 
 img {
-  width: 70%;
+  width: 90%;
   float: left;
   padding: 25px;
 }
@@ -187,6 +192,47 @@ p {
   background-color: rgb(130, 138, 242);
 }
 
-footer {
-  position: absolute;
-}
+.map .tabs-ui {
+  position:relative;
+  min-height:200px;
+  width:240px;
+  clear:both;
+  margin:25px 0;
+  }
+.map .tab {
+  float:left;
+  }
+.map .tab label {
+  background:#eee;
+  padding:10px;
+  border:1px solid #ccc;
+  margin-left:-1px;
+  position:relative;
+  left:1px;
+  top:1px;
+  cursor:pointer;
+  }
+.map .tab label:hover {
+  background:#f8f8f8;
+  }
+.map .tab [type=radio] {
+  display:none;
+  }
+.map .tab .content {
+  background:white;
+  position:absolute;
+  top:28px;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:10px;
+  border:1px solid #ccc;
+  }
+.map .tab [type=radio]:checked ~ label {
+  background:white;
+  border-bottom:1px solid white;
+  z-index:2;
+  }
+.map .tab [type=radio]:checked ~ label ~ .content {
+  z-index:1;
+  }
