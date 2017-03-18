@@ -205,3 +205,21 @@ p {
 #lc {
   background-color: rgb(130, 138, 242);
 }
+
+footer {
+  position: absolute;
+  top: 630px;
+  font-family: "Arial";
+  font-size: 0.8em;
+  left: 40%;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
